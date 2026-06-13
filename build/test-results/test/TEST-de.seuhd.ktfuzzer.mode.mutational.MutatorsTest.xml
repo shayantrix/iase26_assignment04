@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T15:27:14.635Z" hostname="dhcp664-236.laptop-wlc.uni-heidelberg.de" time="0.043">
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T15:42:58.908Z" hostname="dhcp664-236.laptop-wlc.uni-heidelberg.de" time="0.038">
   <properties/>
-  <testcase name="deleteRandomCharacter removes exactly one character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.025"/>
+  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
