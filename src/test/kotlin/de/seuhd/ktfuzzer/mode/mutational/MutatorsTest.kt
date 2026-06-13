@@ -25,15 +25,24 @@ class MutatorsTest {
     fun `repeatRandomCharacter grows the input`() {
         val input = "abcdef"
         assertTrue(Mutators.repeatRandomCharacter(input, random).length > input.length)
+        if (input.isEmpty()) return input
+
+        val index = random.nextInt(input.length)
+        val repeatCount = random.nextInt(2, 11)
+        val repeated = input[index].toString().repeat(repeatCount)
+
+        return input.replaceRange(index, index + 1, repeated)
+
     }
 
     @Test
-    fun `deleteRandomCharacter removes exactly one character`() {
-        val input = "abcd"
-        val result = Mutators.deleteRandomCharacter(input, random)
-        assertEquals(input.length - 1, result.length)
-        val matches = input.indices.any { drop -> result == input.filterIndexed { idx, _ -> idx != drop } }
-        assertTrue(matches, "result should be the input minus one character")
+    fun deleteRandomCharacter(input: String, random: Random): String {
+        if (input.isEmpty()) return input
+
+        val index = random.nextInt(input.length)
+        val newString = StringBuilder(input)
+        newString.deleteAt(index)
+        return newString.toString()
     }
 
     @Test
@@ -54,6 +63,13 @@ class MutatorsTest {
         assertEquals(1, diffs.size, "exactly one character changes")
         val delta = input[diffs[0]].code xor result[diffs[0]].code
         assertTrue(delta != 0 && (delta and (delta - 1)) == 0, "the change is a single bit flip")
+        if (input.isEmpty()) return input
+
+        val index = random.nextInt(input.length)
+        val bit = 1 shl random.nextInt(7)
+        val flipped = (input[index].code xor bit).toChar()
+
+        return input.replaceRange(index, index + 1, flipped.toString())
     }
 
     @Test

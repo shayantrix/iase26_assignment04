@@ -1,7 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T15:42:58.908Z" hostname="dhcp664-236.laptop-wlc.uni-heidelberg.de" time="0.038">
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="10" skipped="0" failures="7" errors="0" timestamp="2026-06-13T16:22:17.491Z" hostname="SIMBA" time="0.171">
   <properties/>
-  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.021"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="repeatRandomCharacter on a single character yields a run of that character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.002">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: repeat one randomly chosen character a random number of times" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: repeat one randomly chosen character a random number of times
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.repeatRandomCharacter(Mutators.kt:55)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.repeatRandomCharacter on a single character yields a run of that character(MutatorsTest.kt:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="mutators never throw on arbitrary input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.142">
+    <failure message="org.opentest4j.AssertionFailedError: Property failed after 1 attempts&#10;&#10;&#9;Arg 0: &lt;empty string&gt; (shrunk from &quot;6nqqlC17Cl.W+|Js&quot;yZ5Bm/yGCjzpy^r0t[;l^gI\1uPy5l/8I]&quot;b2-&amp;fiqn5/'}#rd7t{GT6[l&quot;t3e).|5c9tlK&gt;n#*'-=e]'p.|k*CdmTvUim?Ezu2_pIK5kB*w*N'/BG_XP/6ggDsuS&lt;CMl@U,&amp;S)UZlT\,&quot;)&#10;&#10;Repeat this test by using seed 8046614462676960729&#10;&#10;Caused by IllegalArgumentException: Random range is empty: [1, 0)." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Property failed after 1 attempts
+
+	Arg 0: &lt;empty string&gt; (shrunk from &quot;6nqqlC17Cl.W+|Js&quot;yZ5Bm/yGCjzpy^r0t[;l^gI\1uPy5l/8I]&quot;b2-&amp;fiqn5/'}#rd7t{GT6[l&quot;t3e).|5c9tlK&gt;n#*'-=e]'p.|k*CdmTvUim?Ezu2_pIK5kB*w*N'/BG_XP/6ggDsuS&lt;CMl@U,&amp;S)UZlT\,&quot;)
+
+Repeat this test by using seed 8046614462676960729
+
+Caused by IllegalArgumentException: Random range is empty: [1, 0).
+	at io.kotest.assertions.AssertionErrorBuilder_jvmKt.createAssertionError(AssertionErrorBuilder.jvm.kt:58)
+	at io.kotest.assertions.AssertionErrorBuilder.build(AssertionErrorBuilder.kt:74)
+	at io.kotest.property.internal.ErrorsKt.propertyAssertionError(errors.kt:49)
+	at io.kotest.property.internal.ErrorsKt.throwPropertyTestAssertionError(errors.kt:29)
+	at io.kotest.property.internal.TestKt.handleException(test.kt:85)
+	at io.kotest.property.internal.TestKt.test(test.kt:67)
+	at io.kotest.property.internal.ProptestKt.proptest(proptest.kt:38)
+	at io.kotest.property.PropertyTest1Kt.checkAll(propertyTest1.kt:17)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1.invokeSuspend(MutatorsTest.kt:74)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.mutators never throw on arbitrary input(MutatorsTest.kt:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invokeSuspend(MutatorsTest.kt:78)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invoke(MutatorsTest.kt)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invoke(MutatorsTest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invokeSuspend(proptest.kt:47)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.TestKt.test(test.kt:58)
+	... 17 more
+</failure>
+  </testcase>
+  <testcase name="flipRandomCharacter changes exactly one character by a single bit()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.flipRandomCharacter changes exactly one character by a single bit(MutatorsTest.kt:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="the length-preserving mutators are no-ops on empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001">
+    <failure message="java.lang.IllegalArgumentException: Random range is empty: [1, 0)." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Random range is empty: [1, 0).
+	at kotlin.random.RandomKt.checkRangeBounds(Random.kt:385)
+	at kotlin.random.Random.nextInt(Random.kt:67)
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.deleteRandomCharacter(Mutators.kt:21)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.the length-preserving mutators are no-ops on empty input(MutatorsTest.kt:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="deleteRandomCharacter removes exactly one character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
+  <testcase name="delete shrinks by one and insert grows by one on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.012">
+    <failure message="org.opentest4j.AssertionFailedError: Property failed after 18 attempts&#10;&#10;&#9;Arg 0: &quot;a&quot;&#10;&#10;Repeat this test by using seed 592321266120375486&#10;&#10;Caused by IllegalArgumentException: Random range is empty: [1, 1)." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Property failed after 18 attempts
+
+	Arg 0: &quot;a&quot;
+
+Repeat this test by using seed 592321266120375486
+
+Caused by IllegalArgumentException: Random range is empty: [1, 1).
+	at io.kotest.assertions.AssertionErrorBuilder_jvmKt.createAssertionError(AssertionErrorBuilder.jvm.kt:58)
+	at io.kotest.assertions.AssertionErrorBuilder.build(AssertionErrorBuilder.kt:74)
+	at io.kotest.property.internal.ErrorsKt.propertyAssertionError(errors.kt:49)
+	at io.kotest.property.internal.ErrorsKt.throwPropertyTestAssertionError(errors.kt:29)
+	at io.kotest.property.internal.TestKt.handleException(test.kt:85)
+	at io.kotest.property.internal.TestKt.test(test.kt:67)
+	at io.kotest.property.internal.ProptestKt.proptest(proptest.kt:38)
+	at io.kotest.property.PropertyTest1Kt.checkAll(propertyTest1.kt:17)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$delete shrinks by one and insert grows by one on non-empty input$1.invokeSuspend(MutatorsTest.kt:87)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.delete shrinks by one and insert grows by one on non-empty input(MutatorsTest.kt:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.IllegalArgumentException: Random range is empty: [1, 1).
+	at kotlin.random.RandomKt.checkRangeBounds(Random.kt:385)
+	at kotlin.random.Random.nextInt(Random.kt:67)
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.deleteRandomCharacter(Mutators.kt:21)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$delete shrinks by one and insert grows by one on non-empty input$1$1.invokeSuspend(MutatorsTest.kt:89)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$delete shrinks by one and insert grows by one on non-empty input$1$1.invoke(MutatorsTest.kt)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$delete shrinks by one and insert grows by one on non-empty input$1$1.invoke(MutatorsTest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invokeSuspend(proptest.kt:47)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.TestKt.test(test.kt:58)
+	... 17 more
+</failure>
+  </testcase>
+  <testcase name="insertRandomCharacter on empty input yields a single character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.0"/>
+  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.0"/>
+  <testcase name="flip preserves length on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.005">
+    <failure message="org.opentest4j.AssertionFailedError: Property failed after 1 attempts&#10;&#10;&#9;Arg 0: &quot;a&quot; (shrunk from &quot;aiKAbs915FSre4nu3P&lt;2 +[:iiL&lt;&quot;)&#10;&#10;Repeat this test by using seed -737835520243316536&#10;&#10;Caused by NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Property failed after 1 attempts
+
+	Arg 0: &quot;a&quot; (shrunk from &quot;aiKAbs915FSre4nu3P&lt;2 +[:iiL&lt;&quot;)
+
+Repeat this test by using seed -737835520243316536
+
+Caused by NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character
+	at io.kotest.assertions.AssertionErrorBuilder_jvmKt.createAssertionError(AssertionErrorBuilder.jvm.kt:58)
+	at io.kotest.assertions.AssertionErrorBuilder.build(AssertionErrorBuilder.kt:74)
+	at io.kotest.property.internal.ErrorsKt.propertyAssertionError(errors.kt:49)
+	at io.kotest.property.internal.ErrorsKt.throwPropertyTestAssertionError(errors.kt:29)
+	at io.kotest.property.internal.TestKt.handleException(test.kt:85)
+	at io.kotest.property.internal.TestKt.test(test.kt:67)
+	at io.kotest.property.internal.ProptestKt.proptest(proptest.kt:38)
+	at io.kotest.property.PropertyTest1Kt.checkAll(propertyTest1.kt:17)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1.invokeSuspend(MutatorsTest.kt:98)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.flip preserves length on non-empty input(MutatorsTest.kt:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invokeSuspend(MutatorsTest.kt:99)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invokeSuspend(proptest.kt:47)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.ProptestKt$proptest$3$2.invoke(proptest.kt)
+	at io.kotest.property.internal.TestKt.test(test.kt:58)
+	... 17 more
+</failure>
+  </testcase>
+  <testcase name="repeatRandomCharacter grows the input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: repeat one randomly chosen character a random number of times" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: repeat one randomly chosen character a random number of times
+	at de.seuhd.ktfuzzer.mode.mutational.Mutators.repeatRandomCharacter(Mutators.kt:55)
+	at de.seuhd.ktfuzzer.mode.mutational.MutatorsTest.repeatRandomCharacter grows the input(MutatorsTest.kt:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Property test failed for inputs
+
+0) "6nqqlC17Cl.W+|Js"yZ5Bm/yGCjzpy^r0t[;l^gI\1uPy5l/8I]"b2-&fiqn5/'}#rd7t{GT6[l"t3e).|5c9tlK>n#*'-=e]'p.|k*CdmTvUim?Ezu2_pIK5kB*w*N'/BG_XP/6ggDsuS<CMl@U,&S)UZlT\,"
+
+Caused by kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character at
+	de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invokeSuspend(MutatorsTest.kt:78)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invoke(MutatorsTest.kt)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invoke(MutatorsTest.kt)
+
+
+Attempting to shrink arg "6nqqlC17Cl.W+|Js"yZ5Bm/yGCjzpy^r0t[;l^gI\1uPy5l/8I]"b2-&fiqn5/'}#rd7t{GT6[l"t3e).|5c9tlK>n#*'-=e]'p.|k*CdmTvUim?Ezu2_pIK5kB*w*N'/BG_XP/6ggDsuS<CMl@U,&S)UZlT\,"
+Shrink #1: "6nqqlC17Cl.W+|Js"yZ5Bm/yGCjzpy^r0t[;l^gI\1uPy5l/8I]"b2-&fiqn5/'}#rd7t{GT6[l"t3e" fail
+Shrink #2: "6nqqlC17Cl.W+|Js"yZ5Bm/yGCjzpy^r0t[;l^gI" fail
+Shrink #3: "6nqqlC17Cl.W+|Js"yZ5" fail
+Shrink #4: "6nqqlC17Cl" fail
+Shrink #5: "6nqql" fail
+Shrink #6: "6nq" fail
+Shrink #7: "6n" fail
+Shrink #8: "6" fail
+Shrink #9: <empty string> fail
+Shrink result (after 9 shrinks) => <empty string>
+
+Caused by java.lang.IllegalArgumentException: Random range is empty: [1, 0). at
+	kotlin.random.RandomKt.checkRangeBounds(Random.kt:385)
+	kotlin.random.Random.nextInt(Random.kt:67)
+	de.seuhd.ktfuzzer.mode.mutational.Mutators.deleteRandomCharacter(Mutators.kt:21)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$mutators never throw on arbitrary input$1$1.invokeSuspend(MutatorsTest.kt:76)
+
+Property test failed for inputs
+
+0) "a"
+
+Caused by java.lang.IllegalArgumentException: Random range is empty: [1, 1). at
+	kotlin.random.RandomKt.checkRangeBounds(Random.kt:385)
+	kotlin.random.Random.nextInt(Random.kt:67)
+	de.seuhd.ktfuzzer.mode.mutational.Mutators.deleteRandomCharacter(Mutators.kt:21)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$delete shrinks by one and insert grows by one on non-empty input$1$1.invokeSuspend(MutatorsTest.kt:89)
+
+
+Property test failed for inputs
+
+0) "aiKAbs915FSre4nu3P<2 +[:iiL<"
+
+Caused by kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character at
+	de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invokeSuspend(MutatorsTest.kt:99)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+
+
+Attempting to shrink arg "aiKAbs915FSre4nu3P<2 +[:iiL<"
+Shrink #1: "aiKAbs915FSre4" fail
+Shrink #2: "aiKAbs9" fail
+Shrink #3: "aiKA" fail
+Shrink #4: "ai" fail
+Shrink #5: "a" fail
+Shrink result (after 5 shrinks) => "a"
+
+Caused by kotlin.NotImplementedError: An operation is not implemented: Exercise 1: flip one random low bit of one randomly chosen character at
+	de.seuhd.ktfuzzer.mode.mutational.Mutators.flipRandomCharacter(Mutators.kt:51)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invokeSuspend(MutatorsTest.kt:99)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+	de.seuhd.ktfuzzer.mode.mutational.MutatorsTest$flip preserves length on non-empty input$1$1.invoke(MutatorsTest.kt)
+
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
