@@ -1,6 +1,8 @@
 package de.seuhd.ktfuzzer.mode.mutational
 
 import kotlin.random.Random
+import kotlin.text.count
+import kotlin.text.deleteAt
 
 /**
  * Character-level mutators from The Fuzzing Book's MutationFuzzer
@@ -9,9 +11,22 @@ import kotlin.random.Random
  */
 internal object Mutators {
     /** Deletes one randomly chosen character. */
-    fun deleteRandomCharacter(input: String, random: Random): String =
-        TODO("Exercise 1: delete one randomly chosen character")
+    fun deleteRandomCharacter(input: String, random: Random): String {
+        //Exercise 1: delete one randomly chosen character
+        //length of input chars
+        val len = input.count()
+        // have a random number in the range of len
+        val rnInt = random.nextInt(1, len)
+        // with deleteAt we can delete at specific index
 
+        //make StringBuilder object to access deleteAt(index) func
+        val newString = StringBuilder(input)
+        newString.deleteAt(rnInt)
+        return newString.toString()
+
+        // so easy to make
+        //just had to use StringBuilder class
+    }
     /** Inserts one character drawn uniformly from [alphabet] at a random position. */
     fun insertRandomCharacter(input: String, alphabet: List<Char>, random: Random): String =
         TODO("Exercise 1: insert one character from the alphabet at a random position")

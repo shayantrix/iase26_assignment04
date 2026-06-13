@@ -1,0 +1,3945 @@
+{
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "results": [
+      ],
+      "tool": {
+        "driver": {
+          "guid": "022ca8c2-f6a2-4c95-b107-bb72c43263f3",
+          "informationUri": "https://detekt.dev",
+          "language": "en",
+          "name": "detekt",
+          "organization": "detekt",
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#cognitivecomplexmethod",
+              "id": "detekt.complexity.CognitiveComplexMethod",
+              "name": "CognitiveComplexMethod",
+              "shortDescription": {
+                "text": "Prefer splitting up complex methods into smaller, easier to understand methods."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#complexcondition",
+              "id": "detekt.complexity.ComplexCondition",
+              "name": "ComplexCondition",
+              "shortDescription": {
+                "text": "Complex conditions should be simplified and extracted into well-named methods if necessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#complexinterface",
+              "id": "detekt.complexity.ComplexInterface",
+              "name": "ComplexInterface",
+              "shortDescription": {
+                "text": "An interface contains too many functions and properties. Large classes tend to handle many things at once. An interface should have one responsibility. Split up large interfaces into smaller ones that are easier to understand."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#cyclomaticcomplexmethod",
+              "id": "detekt.complexity.CyclomaticComplexMethod",
+              "name": "CyclomaticComplexMethod",
+              "shortDescription": {
+                "text": "Prefer splitting up complex methods into smaller, easier to test methods."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#labeledexpression",
+              "id": "detekt.complexity.LabeledExpression",
+              "name": "LabeledExpression",
+              "shortDescription": {
+                "text": "Expression with labels increase complexity and affect maintainability."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#largeclass",
+              "id": "detekt.complexity.LargeClass",
+              "name": "LargeClass",
+              "shortDescription": {
+                "text": "One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#longmethod",
+              "id": "detekt.complexity.LongMethod",
+              "name": "LongMethod",
+              "shortDescription": {
+                "text": "One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#longparameterlist",
+              "id": "detekt.complexity.LongParameterList",
+              "name": "LongParameterList",
+              "shortDescription": {
+                "text": "The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#methodoverloading",
+              "id": "detekt.complexity.MethodOverloading",
+              "name": "MethodOverloading",
+              "shortDescription": {
+                "text": "Methods which are overloaded often might be harder to maintain. Furthermore, these methods are tightly coupled. Refactor these methods and try to use optional parameters."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#namedarguments",
+              "id": "detekt.complexity.NamedArguments",
+              "name": "NamedArguments",
+              "shortDescription": {
+                "text": "Named arguments are required for function calls with many arguments."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#nestedblockdepth",
+              "id": "detekt.complexity.NestedBlockDepth",
+              "name": "NestedBlockDepth",
+              "shortDescription": {
+                "text": "Excessive nesting leads to hidden complexity. Prefer extracting code to make it easier to understand."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#nestedscopefunctions",
+              "id": "detekt.complexity.NestedScopeFunctions",
+              "name": "NestedScopeFunctions",
+              "shortDescription": {
+                "text": "Over-using scope functions makes code confusing, hard to read and bug prone."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#replacesafecallchainwithrun",
+              "id": "detekt.complexity.ReplaceSafeCallChainWithRun",
+              "name": "ReplaceSafeCallChainWithRun",
+              "shortDescription": {
+                "text": "Chains of safe calls on non-nullable types can be surrounded with `run {}`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#stringliteralduplication",
+              "id": "detekt.complexity.StringLiteralDuplication",
+              "name": "StringLiteralDuplication",
+              "shortDescription": {
+                "text": "Multiple occurrences of the same string literal within a single file detected. Prefer extracting the string literal into a property or constant."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/complexity#toomanyfunctions",
+              "id": "detekt.complexity.TooManyFunctions",
+              "name": "TooManyFunctions",
+              "shortDescription": {
+                "text": "Too many functions inside a/an file/class/object/interface always indicate a violation of the single responsibility principle. Maybe the file/class/object/interface wants to manage too many things at once. Extract functionality which clearly belongs together."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#coroutinelaunchedintestwithoutruntest",
+              "id": "detekt.coroutines.CoroutineLaunchedInTestWithoutRunTest",
+              "name": "CoroutineLaunchedInTestWithoutRunTest",
+              "shortDescription": {
+                "text": "Launching coroutines in tests without a `runTest` block could swallow exceptions. You should use `runTest` to avoid altering test results."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#globalcoroutineusage",
+              "id": "detekt.coroutines.GlobalCoroutineUsage",
+              "name": "GlobalCoroutineUsage",
+              "shortDescription": {
+                "text": "The usage of the `GlobalScope` instance is highly discouraged."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#injectdispatcher",
+              "id": "detekt.coroutines.InjectDispatcher",
+              "name": "InjectDispatcher",
+              "shortDescription": {
+                "text": "Don't hardcode dispatchers when creating new coroutines or calling `withContext`. Use dependency injection for dispatchers to make testing easier."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#redundantsuspendmodifier",
+              "id": "detekt.coroutines.RedundantSuspendModifier",
+              "name": "RedundantSuspendModifier",
+              "shortDescription": {
+                "text": "The `suspend` modifier is only needed for functions that contain suspending calls."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#sleepinsteadofdelay",
+              "id": "detekt.coroutines.SleepInsteadOfDelay",
+              "name": "SleepInsteadOfDelay",
+              "shortDescription": {
+                "text": "Usage of `Thread.sleep()` in coroutines can potentially halt multiple coroutines at once."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#suspendfuninfinallysection",
+              "id": "detekt.coroutines.SuspendFunInFinallySection",
+              "name": "SuspendFunInFinallySection",
+              "shortDescription": {
+                "text": "Suspend functions should not be called from a 'finally' section without using 'NonCancellable' context as they won't execute if parent coroutine scope is cancelled."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#suspendfunswallowedcancellation",
+              "id": "detekt.coroutines.SuspendFunSwallowedCancellation",
+              "name": "SuspendFunSwallowedCancellation",
+              "shortDescription": {
+                "text": "`CancellationException` must be specially handled and re-thrown when working with exceptions in a suspending context. This includes `runCatching` as well as regular try-catch blocks."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#suspendfunwithcoroutinescopereceiver",
+              "id": "detekt.coroutines.SuspendFunWithCoroutineScopeReceiver",
+              "name": "SuspendFunWithCoroutineScopeReceiver",
+              "shortDescription": {
+                "text": "The `suspend` modifier should not be used for functions that use a CoroutinesScope as receiver. You should use suspend functions without the receiver or use plain functions and use coroutineScope { } instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/coroutines#suspendfunwithflowreturntype",
+              "id": "detekt.coroutines.SuspendFunWithFlowReturnType",
+              "name": "SuspendFunWithFlowReturnType",
+              "shortDescription": {
+                "text": "The `suspend` modifier should not be used for functions that return a Coroutines Flow type. Flows are cold streams and invoking a function that returns one should not produce any side effects."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#absentorwrongfilelicense",
+              "id": "detekt.comments.AbsentOrWrongFileLicense",
+              "name": "AbsentOrWrongFileLicense",
+              "shortDescription": {
+                "text": "License text is absent or incorrect."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#deprecatedblocktag",
+              "id": "detekt.comments.DeprecatedBlockTag",
+              "name": "DeprecatedBlockTag",
+              "shortDescription": {
+                "text": "Do not use the `@deprecated` block tag, which is not supported by KDoc. Use the `@Deprecated` annotation instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#documentationoverprivatefunction",
+              "id": "detekt.comments.DocumentationOverPrivateFunction",
+              "name": "DocumentationOverPrivateFunction",
+              "shortDescription": {
+                "text": "Comments for private functions should be avoided. Prefer giving the function an expressive name. Split it up in smaller, self-explaining functions if necessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#documentationoverprivateproperty",
+              "id": "detekt.comments.DocumentationOverPrivateProperty",
+              "name": "DocumentationOverPrivateProperty",
+              "shortDescription": {
+                "text": "Private properties should be named in a self-explanatory manner without the need for a  comment."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#endofsentenceformat",
+              "id": "detekt.comments.EndOfSentenceFormat",
+              "name": "EndOfSentenceFormat",
+              "shortDescription": {
+                "text": "The first sentence in a KDoc comment should end with proper punctuation or with a correct URL."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#kdocreferencesnonpublicproperty",
+              "id": "detekt.comments.KDocReferencesNonPublicProperty",
+              "name": "KDocReferencesNonPublicProperty",
+              "shortDescription": {
+                "text": "KDoc comments should not refer to non-public properties."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#outdateddocumentation",
+              "id": "detekt.comments.OutdatedDocumentation",
+              "name": "OutdatedDocumentation",
+              "shortDescription": {
+                "text": "KDoc comments should match the actual function or class signature"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#undocumentedpublicclass",
+              "id": "detekt.comments.UndocumentedPublicClass",
+              "name": "UndocumentedPublicClass",
+              "shortDescription": {
+                "text": "Public classes, interfaces and objects require documentation."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#undocumentedpublicfunction",
+              "id": "detekt.comments.UndocumentedPublicFunction",
+              "name": "UndocumentedPublicFunction",
+              "shortDescription": {
+                "text": "Public functions require documentation."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/comments#undocumentedpublicproperty",
+              "id": "detekt.comments.UndocumentedPublicProperty",
+              "name": "UndocumentedPublicProperty",
+              "shortDescription": {
+                "text": "Public properties require documentation."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptycatchblock",
+              "id": "detekt.empty-blocks.EmptyCatchBlock",
+              "name": "EmptyCatchBlock",
+              "shortDescription": {
+                "text": "Empty catch block detected. Empty catch blocks indicate that an exception is ignored and not handled."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyclassblock",
+              "id": "detekt.empty-blocks.EmptyClassBlock",
+              "name": "EmptyClassBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptydefaultconstructor",
+              "id": "detekt.empty-blocks.EmptyDefaultConstructor",
+              "name": "EmptyDefaultConstructor",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptydowhileblock",
+              "id": "detekt.empty-blocks.EmptyDoWhileBlock",
+              "name": "EmptyDoWhileBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyelseblock",
+              "id": "detekt.empty-blocks.EmptyElseBlock",
+              "name": "EmptyElseBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyfinallyblock",
+              "id": "detekt.empty-blocks.EmptyFinallyBlock",
+              "name": "EmptyFinallyBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyforblock",
+              "id": "detekt.empty-blocks.EmptyForBlock",
+              "name": "EmptyForBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyfunctionblock",
+              "id": "detekt.empty-blocks.EmptyFunctionBlock",
+              "name": "EmptyFunctionBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyifblock",
+              "id": "detekt.empty-blocks.EmptyIfBlock",
+              "name": "EmptyIfBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptyinitblock",
+              "id": "detekt.empty-blocks.EmptyInitBlock",
+              "name": "EmptyInitBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptykotlinfile",
+              "id": "detekt.empty-blocks.EmptyKotlinFile",
+              "name": "EmptyKotlinFile",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptysecondaryconstructor",
+              "id": "detekt.empty-blocks.EmptySecondaryConstructor",
+              "name": "EmptySecondaryConstructor",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptytryblock",
+              "id": "detekt.empty-blocks.EmptyTryBlock",
+              "name": "EmptyTryBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptywhenblock",
+              "id": "detekt.empty-blocks.EmptyWhenBlock",
+              "name": "EmptyWhenBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/empty-blocks#emptywhileblock",
+              "id": "detekt.empty-blocks.EmptyWhileBlock",
+              "name": "EmptyWhileBlock",
+              "shortDescription": {
+                "text": "Empty block of code detected. As they serve no purpose they should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#avoidreferentialequality",
+              "id": "detekt.potential-bugs.AvoidReferentialEquality",
+              "name": "AvoidReferentialEquality",
+              "shortDescription": {
+                "text": "Avoid using referential equality and prefer to use referential equality checks instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#castnullabletononnullabletype",
+              "id": "detekt.potential-bugs.CastNullableToNonNullableType",
+              "name": "CastNullableToNonNullableType",
+              "shortDescription": {
+                "text": "Nullable type to non-null type cast is found. Consider using two assertions, `null` assertions and type cast"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#casttonullabletype",
+              "id": "detekt.potential-bugs.CastToNullableType",
+              "name": "CastToNullableType",
+              "shortDescription": {
+                "text": "Use safe cast instead of unsafe cast to nullable types."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#chararraytostringcall",
+              "id": "detekt.potential-bugs.CharArrayToStringCall",
+              "name": "CharArrayToStringCall",
+              "shortDescription": {
+                "text": "`CharArray.toString()` call does not return expected result."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#deprecation",
+              "id": "detekt.potential-bugs.Deprecation",
+              "name": "Deprecation",
+              "shortDescription": {
+                "text": "Deprecated elements should not be used."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#dontdowncastcollectiontypes",
+              "id": "detekt.potential-bugs.DontDowncastCollectionTypes",
+              "name": "DontDowncastCollectionTypes",
+              "shortDescription": {
+                "text": "Down-casting immutable collection types is breaking the collection contract."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#doublemutabilityforcollection",
+              "id": "detekt.potential-bugs.DoubleMutabilityForCollection",
+              "name": "DoubleMutabilityForCollection",
+              "shortDescription": {
+                "text": "Using var with mutable collections or values leads to double mutability. Consider using val or immutable collection or value types."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#elsecaseinsteadofexhaustivewhen",
+              "id": "detekt.potential-bugs.ElseCaseInsteadOfExhaustiveWhen",
+              "name": "ElseCaseInsteadOfExhaustiveWhen",
+              "shortDescription": {
+                "text": "A `when` expression that has an exhaustive set of cases should not contain an `else` case."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#equalsalwaysreturnstrueorfalse",
+              "id": "detekt.potential-bugs.EqualsAlwaysReturnsTrueOrFalse",
+              "name": "EqualsAlwaysReturnsTrueOrFalse",
+              "shortDescription": {
+                "text": "Having an `equals()` method that always returns true or false is not a good idea. It does not follow the contract of this method. Consider a good default implementation (e.g. `this == other`)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#equalswithhashcodeexist",
+              "id": "detekt.potential-bugs.EqualsWithHashCodeExist",
+              "name": "EqualsWithHashCodeExist",
+              "shortDescription": {
+                "text": "Always override hashCode when you override equals. All hash-based collections depend on objects meeting the equals-contract. Two equal objects must produce the same hashcode. When inheriting equals or hashcode, override the inherited and call the super method for clarification."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#exitoutsidemain",
+              "id": "detekt.potential-bugs.ExitOutsideMain",
+              "name": "ExitOutsideMain",
+              "shortDescription": {
+                "text": "Do not directly exit the process outside the `main` function. Throw an exception instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#explicitgarbagecollectioncall",
+              "id": "detekt.potential-bugs.ExplicitGarbageCollectionCall",
+              "name": "ExplicitGarbageCollectionCall",
+              "shortDescription": {
+                "text": "Don't try to be smarter than the JVM. Your code should work independently whether the garbage collector is disabled or not. If you face memory issues, try tuning the JVM options instead of relying on code itself."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#hasplatformtype",
+              "id": "detekt.potential-bugs.HasPlatformType",
+              "name": "HasPlatformType",
+              "shortDescription": {
+                "text": "Platform types must be declared explicitly in public APIs."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#ignoredreturnvalue",
+              "id": "detekt.potential-bugs.IgnoredReturnValue",
+              "name": "IgnoredReturnValue",
+              "shortDescription": {
+                "text": "This call returns a value which is ignored"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#implicitdefaultlocale",
+              "id": "detekt.potential-bugs.ImplicitDefaultLocale",
+              "name": "ImplicitDefaultLocale",
+              "shortDescription": {
+                "text": "Implicit default locale used for string processing. Consider using explicit locale."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#implicitunitreturntype",
+              "id": "detekt.potential-bugs.ImplicitUnitReturnType",
+              "name": "ImplicitUnitReturnType",
+              "shortDescription": {
+                "text": "Functions using expression statements have an implicit return type. Changing the type of the expression accidentally, changes the function return type. This may lead to backward incompatibility. Use a block statement to make clear this function will never return a value."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#invalidrange",
+              "id": "detekt.potential-bugs.InvalidRange",
+              "name": "InvalidRange",
+              "shortDescription": {
+                "text": "If a for loops condition is false before the first iteration, the loop will never get executed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#iteratorhasnextcallsnextmethod",
+              "id": "detekt.potential-bugs.IteratorHasNextCallsNextMethod",
+              "name": "IteratorHasNextCallsNextMethod",
+              "shortDescription": {
+                "text": "The `hasNext()` method of an Iterator implementation should not call the `next()` method. The state of the iterator should not be changed inside the `hasNext()` method. The `hasNext()` method is not supposed to have any side effects."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#iteratornotthrowingnosuchelementexception",
+              "id": "detekt.potential-bugs.IteratorNotThrowingNoSuchElementException",
+              "name": "IteratorNotThrowingNoSuchElementException",
+              "shortDescription": {
+                "text": "The `next()` method of an `Iterator` implementation should throw a `NoSuchElementException` when there are no more elements to return."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#lateinitusage",
+              "id": "detekt.potential-bugs.LateinitUsage",
+              "name": "LateinitUsage",
+              "shortDescription": {
+                "text": "Usage of `lateinit` detected. Using `lateinit` for property initialization is error prone, try using constructor injection or delegation."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#mapgetwithnotnullassertionoperator",
+              "id": "detekt.potential-bugs.MapGetWithNotNullAssertionOperator",
+              "name": "MapGetWithNotNullAssertionOperator",
+              "shortDescription": {
+                "text": "map.get() with not-null assertion operator (!!) can result in a NullPointerException. Consider usage of map.getValue(), map.getOrDefault() or map.getOrElse() instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#missingpackagedeclaration",
+              "id": "detekt.potential-bugs.MissingPackageDeclaration",
+              "name": "MissingPackageDeclaration",
+              "shortDescription": {
+                "text": "Kotlin source files should define a package."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#missingsupercall",
+              "id": "detekt.potential-bugs.MissingSuperCall",
+              "name": "MissingSuperCall",
+              "shortDescription": {
+                "text": "Overriding method is missing a call to overridden super method."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#missingusecall",
+              "id": "detekt.potential-bugs.MissingUseCall",
+              "name": "MissingUseCall",
+              "shortDescription": {
+                "text": "Usage of `Closeable` detected without `use` call. Using `Closeable` without `use` can be problematic as closing `Closeable` may throw exception."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#nullcheckonmutableproperty",
+              "id": "detekt.potential-bugs.NullCheckOnMutableProperty",
+              "name": "NullCheckOnMutableProperty",
+              "shortDescription": {
+                "text": "Checking nullability on a mutable property is not useful because the property may be set to null afterwards."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#nullabletostringcall",
+              "id": "detekt.potential-bugs.NullableToStringCall",
+              "name": "NullableToStringCall",
+              "shortDescription": {
+                "text": "`toString()` on nullable receiver may return the string \"null\""
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#propertyusedbeforedeclaration",
+              "id": "detekt.potential-bugs.PropertyUsedBeforeDeclaration",
+              "name": "PropertyUsedBeforeDeclaration",
+              "shortDescription": {
+                "text": "Properties before declaration should not be used."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unconditionaljumpstatementinloop",
+              "id": "detekt.potential-bugs.UnconditionalJumpStatementInLoop",
+              "name": "UnconditionalJumpStatementInLoop",
+              "shortDescription": {
+                "text": "An unconditional jump statement in a loop is useless. The loop itself is only executed once."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unnamedparameteruse",
+              "id": "detekt.potential-bugs.UnnamedParameterUse",
+              "name": "UnnamedParameterUse",
+              "shortDescription": {
+                "text": "Passing no named parameters can cause issue when parameters order change"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unnecessarynotnullcheck",
+              "id": "detekt.potential-bugs.UnnecessaryNotNullCheck",
+              "name": "UnnecessaryNotNullCheck",
+              "shortDescription": {
+                "text": "Remove unnecessary not-null checks on non-null types."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unnecessarynotnulloperator",
+              "id": "detekt.potential-bugs.UnnecessaryNotNullOperator",
+              "name": "UnnecessaryNotNullOperator",
+              "shortDescription": {
+                "text": "Unnecessary not-null unary operator (!!) detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unnecessarysafecall",
+              "id": "detekt.potential-bugs.UnnecessarySafeCall",
+              "name": "UnnecessarySafeCall",
+              "shortDescription": {
+                "text": "Unnecessary safe call operator detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unreachablecatchblock",
+              "id": "detekt.potential-bugs.UnreachableCatchBlock",
+              "name": "UnreachableCatchBlock",
+              "shortDescription": {
+                "text": "Unreachable catch block detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unreachablecode",
+              "id": "detekt.potential-bugs.UnreachableCode",
+              "name": "UnreachableCode",
+              "shortDescription": {
+                "text": "Unreachable code detected. This code should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unsafecallonnullabletype",
+              "id": "detekt.potential-bugs.UnsafeCallOnNullableType",
+              "name": "UnsafeCallOnNullableType",
+              "shortDescription": {
+                "text": "Unsafe calls on nullable types detected. These calls will throw a NullPointerException in case the nullable value is null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unsafecast",
+              "id": "detekt.potential-bugs.UnsafeCast",
+              "name": "UnsafeCast",
+              "shortDescription": {
+                "text": "Cast operator throws an exception if the cast is not possible."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#unusedunaryoperator",
+              "id": "detekt.potential-bugs.UnusedUnaryOperator",
+              "name": "UnusedUnaryOperator",
+              "shortDescription": {
+                "text": "This unary operator is unused."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#uselesspostfixexpression",
+              "id": "detekt.potential-bugs.UselessPostfixExpression",
+              "name": "UselessPostfixExpression",
+              "shortDescription": {
+                "text": "The incremented or decremented value is unused. This value is replaced with the original value."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/potential-bugs#wrongequalstypeparameter",
+              "id": "detekt.potential-bugs.WrongEqualsTypeParameter",
+              "name": "WrongEqualsTypeParameter",
+              "shortDescription": {
+                "text": "Wrong parameter type for `equals()` method found. To correctly override the `equals()` method use `Any?`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#errorusagewiththrowable",
+              "id": "detekt.exceptions.ErrorUsageWithThrowable",
+              "name": "ErrorUsageWithThrowable",
+              "shortDescription": {
+                "text": "Passing `Throwable` in `error` method is ambiguous. Use `error(throwable.message ?: \"No error message provided\")` instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#exceptionraisedinunexpectedlocation",
+              "id": "detekt.exceptions.ExceptionRaisedInUnexpectedLocation",
+              "name": "ExceptionRaisedInUnexpectedLocation",
+              "shortDescription": {
+                "text": "This method is not expected to throw exceptions. This can cause weird behavior."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#instanceofcheckforexception",
+              "id": "detekt.exceptions.InstanceOfCheckForException",
+              "name": "InstanceOfCheckForException",
+              "shortDescription": {
+                "text": "Instead of catching for a general exception type and checking for a specific exception type, use multiple catch blocks."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#notimplementeddeclaration",
+              "id": "detekt.exceptions.NotImplementedDeclaration",
+              "name": "NotImplementedDeclaration",
+              "shortDescription": {
+                "text": "The NotImplementedDeclaration should only be used when a method stub is necessary. This defers the development of the functionality of this function. Hence, the `NotImplementedDeclaration` should only serve as a temporary declaration. Before releasing, this type of declaration should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#objectextendsthrowable",
+              "id": "detekt.exceptions.ObjectExtendsThrowable",
+              "name": "ObjectExtendsThrowable",
+              "shortDescription": {
+                "text": "An `object` should not extend any type of Throwable. Throwables are stateful and should be instantiated only when needed for when a specific error occurs. An `object`, being a singleton, that extends any type of Throwable consequently introduces a global singleton exception whose instance may be inadvertently reused from multiple places, thus introducing shared mutable state."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#printstacktrace",
+              "id": "detekt.exceptions.PrintStackTrace",
+              "name": "PrintStackTrace",
+              "shortDescription": {
+                "text": "Do not print a stack trace. These debug statements should be removed or replaced with a logger."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#rethrowcaughtexception",
+              "id": "detekt.exceptions.RethrowCaughtException",
+              "name": "RethrowCaughtException",
+              "shortDescription": {
+                "text": "Do not rethrow a caught exception of the same type."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#returnfromfinally",
+              "id": "detekt.exceptions.ReturnFromFinally",
+              "name": "ReturnFromFinally",
+              "shortDescription": {
+                "text": "Do not return within a finally statement. This can discard exceptions."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#swallowedexception",
+              "id": "detekt.exceptions.SwallowedException",
+              "name": "SwallowedException",
+              "shortDescription": {
+                "text": "The caught exception is swallowed. The original exception could be lost."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#throwingexceptionfromfinally",
+              "id": "detekt.exceptions.ThrowingExceptionFromFinally",
+              "name": "ThrowingExceptionFromFinally",
+              "shortDescription": {
+                "text": "Do not throw an exception within a finally statement. This can discard exceptions and is confusing."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#throwingexceptioninmain",
+              "id": "detekt.exceptions.ThrowingExceptionInMain",
+              "name": "ThrowingExceptionInMain",
+              "shortDescription": {
+                "text": "The main method should not throw an exception."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#throwingexceptionswithoutmessageorcause",
+              "id": "detekt.exceptions.ThrowingExceptionsWithoutMessageOrCause",
+              "name": "ThrowingExceptionsWithoutMessageOrCause",
+              "shortDescription": {
+                "text": "A call to the default constructor of an exception was detected. Instead one of the constructor overloads should be called. This allows to provide more meaningful exceptions."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#throwingnewinstanceofsameexception",
+              "id": "detekt.exceptions.ThrowingNewInstanceOfSameException",
+              "name": "ThrowingNewInstanceOfSameException",
+              "shortDescription": {
+                "text": "Avoid catch blocks that rethrow a caught exception wrapped inside a new instance of the same exception."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#toogenericexceptioncaught",
+              "id": "detekt.exceptions.TooGenericExceptionCaught",
+              "name": "TooGenericExceptionCaught",
+              "shortDescription": {
+                "text": "The caught exception is too generic. Prefer catching specific exceptions to the case that is currently handled."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/exceptions#toogenericexceptionthrown",
+              "id": "detekt.exceptions.TooGenericExceptionThrown",
+              "name": "TooGenericExceptionThrown",
+              "shortDescription": {
+                "text": "The thrown exception is too generic. Prefer throwing project specific exceptions to handle error cases."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#booleanpropertynaming",
+              "id": "detekt.naming.BooleanPropertyNaming",
+              "name": "BooleanPropertyNaming",
+              "shortDescription": {
+                "text": "Boolean property name should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#classnaming",
+              "id": "detekt.naming.ClassNaming",
+              "name": "ClassNaming",
+              "shortDescription": {
+                "text": "A class or object name should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#constructorparameternaming",
+              "id": "detekt.naming.ConstructorParameterNaming",
+              "name": "ConstructorParameterNaming",
+              "shortDescription": {
+                "text": "Constructor parameter names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#enumnaming",
+              "id": "detekt.naming.EnumNaming",
+              "name": "EnumNaming",
+              "shortDescription": {
+                "text": "Enum names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#forbiddenclassname",
+              "id": "detekt.naming.ForbiddenClassName",
+              "name": "ForbiddenClassName",
+              "shortDescription": {
+                "text": "Forbidden class name as per configuration detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#functionnamemaxlength",
+              "id": "detekt.naming.FunctionNameMaxLength",
+              "name": "FunctionNameMaxLength",
+              "shortDescription": {
+                "text": "Function names should not be longer than the maximum set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#functionnameminlength",
+              "id": "detekt.naming.FunctionNameMinLength",
+              "name": "FunctionNameMinLength",
+              "shortDescription": {
+                "text": "Function names should not be shorter than the minimum set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#functionnaming",
+              "id": "detekt.naming.FunctionNaming",
+              "name": "FunctionNaming",
+              "shortDescription": {
+                "text": "Function names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#functionparameternaming",
+              "id": "detekt.naming.FunctionParameterNaming",
+              "name": "FunctionParameterNaming",
+              "shortDescription": {
+                "text": "Function parameter names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#invalidpackagedeclaration",
+              "id": "detekt.naming.InvalidPackageDeclaration",
+              "name": "InvalidPackageDeclaration",
+              "shortDescription": {
+                "text": "Kotlin source files should be stored in the directory corresponding to its package statement."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#lambdaparameternaming",
+              "id": "detekt.naming.LambdaParameterNaming",
+              "name": "LambdaParameterNaming",
+              "shortDescription": {
+                "text": "Lambda parameter names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#matchingdeclarationname",
+              "id": "detekt.naming.MatchingDeclarationName",
+              "name": "MatchingDeclarationName",
+              "shortDescription": {
+                "text": "If a source file contains only a single non-private top-level class or object, the file name should reflect the case-sensitive name plus the .kt extension."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#membernameequalsclassname",
+              "id": "detekt.naming.MemberNameEqualsClassName",
+              "name": "MemberNameEqualsClassName",
+              "shortDescription": {
+                "text": "A member should not be given the same name as its parent class or object."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#nonameshadowing",
+              "id": "detekt.naming.NoNameShadowing",
+              "name": "NoNameShadowing",
+              "shortDescription": {
+                "text": "Disallow shadowing variable declarations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#nonbooleanpropertyprefixedwithis",
+              "id": "detekt.naming.NonBooleanPropertyPrefixedWithIs",
+              "name": "NonBooleanPropertyPrefixedWithIs",
+              "shortDescription": {
+                "text": "Only boolean property names can start with `is` prefix."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#objectpropertynaming",
+              "id": "detekt.naming.ObjectPropertyNaming",
+              "name": "ObjectPropertyNaming",
+              "shortDescription": {
+                "text": "Property names inside objects should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#packagenaming",
+              "id": "detekt.naming.PackageNaming",
+              "name": "PackageNaming",
+              "shortDescription": {
+                "text": "Package names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#toplevelpropertynaming",
+              "id": "detekt.naming.TopLevelPropertyNaming",
+              "name": "TopLevelPropertyNaming",
+              "shortDescription": {
+                "text": "Top level property names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#variablemaxlength",
+              "id": "detekt.naming.VariableMaxLength",
+              "name": "VariableMaxLength",
+              "shortDescription": {
+                "text": "Variable names should not be longer than the maximum set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#variableminlength",
+              "id": "detekt.naming.VariableMinLength",
+              "name": "VariableMinLength",
+              "shortDescription": {
+                "text": "Variable names should not be shorter than the minimum set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/naming#variablenaming",
+              "id": "detekt.naming.VariableNaming",
+              "name": "VariableNaming",
+              "shortDescription": {
+                "text": "Variable names should follow the naming convention set in detekt's configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#arrayprimitive",
+              "id": "detekt.performance.ArrayPrimitive",
+              "name": "ArrayPrimitive",
+              "shortDescription": {
+                "text": "Using `Array<Primitive>` leads to implicit boxing and a performance hit."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#couldbesequence",
+              "id": "detekt.performance.CouldBeSequence",
+              "name": "CouldBeSequence",
+              "shortDescription": {
+                "text": "Several chained collection operations that should be a sequence."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#foreachonrange",
+              "id": "detekt.performance.ForEachOnRange",
+              "name": "ForEachOnRange",
+              "shortDescription": {
+                "text": "Using the forEach method on ranges has a heavy performance cost. Prefer using simple for loops."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#spreadoperator",
+              "id": "detekt.performance.SpreadOperator",
+              "name": "SpreadOperator",
+              "shortDescription": {
+                "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#unnecessaryinitonarray",
+              "id": "detekt.performance.UnnecessaryInitOnArray",
+              "name": "UnnecessaryInitOnArray",
+              "shortDescription": {
+                "text": "Flags array constructors that use lambda builders returning the same default value when the default initialization would produce the same result."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#unnecessarypartofbinaryexpression",
+              "id": "detekt.performance.UnnecessaryPartOfBinaryExpression",
+              "name": "UnnecessaryPartOfBinaryExpression",
+              "shortDescription": {
+                "text": "Detects unnecessary checks in binary expressions."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#unnecessarytemporaryinstantiation",
+              "id": "detekt.performance.UnnecessaryTemporaryInstantiation",
+              "name": "UnnecessaryTemporaryInstantiation",
+              "shortDescription": {
+                "text": "Avoid temporary objects when converting primitive types to `String`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/performance#unnecessarytypecasting",
+              "id": "detekt.performance.UnnecessaryTypeCasting",
+              "name": "UnnecessaryTypeCasting",
+              "shortDescription": {
+                "text": "Unnecessary type casting is found. Consider using type checking."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#abstractclasscanbeconcreteclass",
+              "id": "detekt.style.AbstractClassCanBeConcreteClass",
+              "name": "AbstractClassCanBeConcreteClass",
+              "shortDescription": {
+                "text": "An abstract class is unnecessary. May be refactored to a concrete class."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#abstractclasscanbeinterface",
+              "id": "detekt.style.AbstractClassCanBeInterface",
+              "name": "AbstractClassCanBeInterface",
+              "shortDescription": {
+                "text": "An abstract class is unnecessary. May be refactored to an interface."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#alsocouldbeapply",
+              "id": "detekt.style.AlsoCouldBeApply",
+              "name": "AlsoCouldBeApply",
+              "shortDescription": {
+                "text": "When an `also` block contains only `it`-started expressions, simplify it to the `apply` block."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#bracesonifstatements",
+              "id": "detekt.style.BracesOnIfStatements",
+              "name": "BracesOnIfStatements",
+              "shortDescription": {
+                "text": "Braces do not comply with the specified policy"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#bracesonwhenstatements",
+              "id": "detekt.style.BracesOnWhenStatements",
+              "name": "BracesOnWhenStatements",
+              "shortDescription": {
+                "text": "Braces do not comply with the specified policy"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#canbenonnullable",
+              "id": "detekt.style.CanBeNonNullable",
+              "name": "CanBeNonNullable",
+              "shortDescription": {
+                "text": "Variable can be changed to non-nullable, as it is never set to null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#cascadingcallwrapping",
+              "id": "detekt.style.CascadingCallWrapping",
+              "name": "CascadingCallWrapping",
+              "shortDescription": {
+                "text": "If a chained call is wrapped to a new line, subsequent chained calls should be as well."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#classordering",
+              "id": "detekt.style.ClassOrdering",
+              "name": "ClassOrdering",
+              "shortDescription": {
+                "text": "Class contents should be in this order: Property declarations/initializer blocks; secondary constructors; method declarations then companion objects."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#collapsibleifstatements",
+              "id": "detekt.style.CollapsibleIfStatements",
+              "name": "CollapsibleIfStatements",
+              "shortDescription": {
+                "text": "Two if statements which could be collapsed were detected. These statements can be merged to improve readability."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#dataclasscontainsfunctions",
+              "id": "detekt.style.DataClassContainsFunctions",
+              "name": "DataClassContainsFunctions",
+              "shortDescription": {
+                "text": "Data classes should mainly be used to store data and should not have any extra functions (Compiler will automatically generate equals, toString and hashCode functions)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#dataclassshouldbeimmutable",
+              "id": "detekt.style.DataClassShouldBeImmutable",
+              "name": "DataClassShouldBeImmutable",
+              "shortDescription": {
+                "text": "Data classes should mainly be immutable and should not have any side effects (To copy an object altering some of its properties use the copy function)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#destructuringdeclarationwithtoomanyentries",
+              "id": "detekt.style.DestructuringDeclarationWithTooManyEntries",
+              "name": "DestructuringDeclarationWithTooManyEntries",
+              "shortDescription": {
+                "text": "Too many entries in a destructuring declaration make the code hard to understand."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#doublenegativeexpression",
+              "id": "detekt.style.DoubleNegativeExpression",
+              "name": "DoubleNegativeExpression",
+              "shortDescription": {
+                "text": "Expression with two or more calls of operator `not` could be simplified."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#doublenegativelambda",
+              "id": "detekt.style.DoubleNegativeLambda",
+              "name": "DoubleNegativeLambda",
+              "shortDescription": {
+                "text": "Double negative from a function name expressed in the negative (like `takeUnless`) with a lambda block that also contains negation. This is more readable when rewritten using a positive form of the function (like `takeIf`)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#equalsnullcall",
+              "id": "detekt.style.EqualsNullCall",
+              "name": "EqualsNullCall",
+              "shortDescription": {
+                "text": "Equals() method is called with null as parameter. Consider using == to compare to null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#equalsonsignatureline",
+              "id": "detekt.style.EqualsOnSignatureLine",
+              "name": "EqualsOnSignatureLine",
+              "shortDescription": {
+                "text": "Equals signs for expression style functions should be on the same line as the signature."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#explicitcollectionelementaccessmethod",
+              "id": "detekt.style.ExplicitCollectionElementAccessMethod",
+              "name": "ExplicitCollectionElementAccessMethod",
+              "shortDescription": {
+                "text": "Prefer usage of the indexed access operator [] for map element access or insert methods."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#explicititlambdamultipleparameters",
+              "id": "detekt.style.ExplicitItLambdaMultipleParameters",
+              "name": "ExplicitItLambdaMultipleParameters",
+              "shortDescription": {
+                "text": "Declaring lambda parameters as `it` is inappropriate."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#explicititlambdaparameter",
+              "id": "detekt.style.ExplicitItLambdaParameter",
+              "name": "ExplicitItLambdaParameter",
+              "shortDescription": {
+                "text": "Declaring lambda parameters as `it` is redundant."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#expressionbodysyntax",
+              "id": "detekt.style.ExpressionBodySyntax",
+              "name": "ExpressionBodySyntax",
+              "shortDescription": {
+                "text": "Functions with exact one statement, the return statement, can be rewritten with ExpressionBodySyntax."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddenannotation",
+              "id": "detekt.style.ForbiddenAnnotation",
+              "name": "ForbiddenAnnotation",
+              "shortDescription": {
+                "text": "Avoid using this annotation."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddencomment",
+              "id": "detekt.style.ForbiddenComment",
+              "name": "ForbiddenComment",
+              "shortDescription": {
+                "text": "Flags a forbidden comment."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddenimport",
+              "id": "detekt.style.ForbiddenImport",
+              "name": "ForbiddenImport",
+              "shortDescription": {
+                "text": "Mark forbidden imports. A forbidden import could be an import for an unstable / experimental api and hence you might want to mark it as forbidden in order to get warned about the usage."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddenmethodcall",
+              "id": "detekt.style.ForbiddenMethodCall",
+              "name": "ForbiddenMethodCall",
+              "shortDescription": {
+                "text": "Mark forbidden methods. A forbidden method could be an invocation of an unstable / experimental method and hence you might want to mark it as forbidden in order to get warned about the usage."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddennamedparam",
+              "id": "detekt.style.ForbiddenNamedParam",
+              "name": "ForbiddenNamedParam",
+              "shortDescription": {
+                "text": "Mark the methods/constructors where using named param is forbidden."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddenoptin",
+              "id": "detekt.style.ForbiddenOptIn",
+              "name": "ForbiddenOptIn",
+              "shortDescription": {
+                "text": "Using this opt-in is forbidden."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddensuppress",
+              "id": "detekt.style.ForbiddenSuppress",
+              "name": "ForbiddenSuppress",
+              "shortDescription": {
+                "text": "Suppressing a rule which is forbidden in current configuration."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#forbiddenvoid",
+              "id": "detekt.style.ForbiddenVoid",
+              "name": "ForbiddenVoid",
+              "shortDescription": {
+                "text": "`Unit` should be used instead of `Void`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#functiononlyreturningconstant",
+              "id": "detekt.style.FunctionOnlyReturningConstant",
+              "name": "FunctionOnlyReturningConstant",
+              "shortDescription": {
+                "text": "A function that only returns a constant is misleading. Consider declaring a constant instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#loopwithtoomanyjumpstatements",
+              "id": "detekt.style.LoopWithTooManyJumpStatements",
+              "name": "LoopWithTooManyJumpStatements",
+              "shortDescription": {
+                "text": "The loop contains more than one break or continue statement. The code should be refactored to increase readability."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#magicnumber",
+              "id": "detekt.style.MagicNumber",
+              "name": "MagicNumber",
+              "shortDescription": {
+                "text": "Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#mandatorybracesloops",
+              "id": "detekt.style.MandatoryBracesLoops",
+              "name": "MandatoryBracesLoops",
+              "shortDescription": {
+                "text": "A multi-line loop was found that does not have braces. These should be added to improve readability."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#maxchainedcallsonsameline",
+              "id": "detekt.style.MaxChainedCallsOnSameLine",
+              "name": "MaxChainedCallsOnSameLine",
+              "shortDescription": {
+                "text": "Chained calls beyond the maximum should be wrapped to a new line."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#maxlinelength",
+              "id": "detekt.style.MaxLineLength",
+              "name": "MaxLineLength",
+              "shortDescription": {
+                "text": "Line detected, which is longer than the defined maximum line length in the code style."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#maybeconstant",
+              "id": "detekt.style.MayBeConstant",
+              "name": "MayBeConstant",
+              "shortDescription": {
+                "text": "Usage of `vals` that can be `const val` detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#modifierorder",
+              "id": "detekt.style.ModifierOrder",
+              "name": "ModifierOrder",
+              "shortDescription": {
+                "text": "Modifiers are not in the correct order. Consider to reorder these modifiers."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#multilinelambdaitparameter",
+              "id": "detekt.style.MultilineLambdaItParameter",
+              "name": "MultilineLambdaItParameter",
+              "shortDescription": {
+                "text": "Multiline lambdas should not use `it` as a parameter name."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#multilinerawstringindentation",
+              "id": "detekt.style.MultilineRawStringIndentation",
+              "name": "MultilineRawStringIndentation",
+              "shortDescription": {
+                "text": "The indentation of the raw String should be consistent"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#nestedclassesvisibility",
+              "id": "detekt.style.NestedClassesVisibility",
+              "name": "NestedClassesVisibility",
+              "shortDescription": {
+                "text": "The explicit public modifier still results in an internal nested class."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#newlineatendoffile",
+              "id": "detekt.style.NewLineAtEndOfFile",
+              "name": "NewLineAtEndOfFile",
+              "shortDescription": {
+                "text": "Checks whether files end with a line separator."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#notabs",
+              "id": "detekt.style.NoTabs",
+              "name": "NoTabs",
+              "shortDescription": {
+                "text": "Checks if tabs are used in Kotlin files."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#nullablebooleancheck",
+              "id": "detekt.style.NullableBooleanCheck",
+              "name": "NullableBooleanCheck",
+              "shortDescription": {
+                "text": "Nullable boolean check should use `==` rather than `?:`"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#objectliteraltolambda",
+              "id": "detekt.style.ObjectLiteralToLambda",
+              "name": "ObjectLiteralToLambda",
+              "shortDescription": {
+                "text": "Report object literals that can be changed to lambdas."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#optionalabstractkeyword",
+              "id": "detekt.style.OptionalAbstractKeyword",
+              "name": "OptionalAbstractKeyword",
+              "shortDescription": {
+                "text": "Unnecessary abstract modifier in interface detected. This abstract modifier is unnecessary and thus can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#optionalunit",
+              "id": "detekt.style.OptionalUnit",
+              "name": "OptionalUnit",
+              "shortDescription": {
+                "text": "Return type of `Unit` is unnecessary and can be safely removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#protectedmemberinfinalclass",
+              "id": "detekt.style.ProtectedMemberInFinalClass",
+              "name": "ProtectedMemberInFinalClass",
+              "shortDescription": {
+                "text": "Member with protected visibility in final class is private. Consider using private or internal as modifier."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#rangeuntilinsteadofrangeto",
+              "id": "detekt.style.RangeUntilInsteadOfRangeTo",
+              "name": "RangeUntilInsteadOfRangeTo",
+              "shortDescription": {
+                "text": "A `..` call can be replaced with `..<`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#redundantconstructorkeyword",
+              "id": "detekt.style.RedundantConstructorKeyword",
+              "name": "RedundantConstructorKeyword",
+              "shortDescription": {
+                "text": "Redundant `constructor` modifier can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#redundantexplicittype",
+              "id": "detekt.style.RedundantExplicitType",
+              "name": "RedundantExplicitType",
+              "shortDescription": {
+                "text": "Type does not need to be stated explicitly and can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#redundanthigherordermapusage",
+              "id": "detekt.style.RedundantHigherOrderMapUsage",
+              "name": "RedundantHigherOrderMapUsage",
+              "shortDescription": {
+                "text": "Checks for redundant 'map' calls, which can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#redundantvisibilitymodifier",
+              "id": "detekt.style.RedundantVisibilityModifier",
+              "name": "RedundantVisibilityModifier",
+              "shortDescription": {
+                "text": "Redundant visibility modifiers detected, which can be safely removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#returncount",
+              "id": "detekt.style.ReturnCount",
+              "name": "ReturnCount",
+              "shortDescription": {
+                "text": "Restrict the number of return statements in methods."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#safecast",
+              "id": "detekt.style.SafeCast",
+              "name": "SafeCast",
+              "shortDescription": {
+                "text": "Prefer to use a safe cast instead of if-else-null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#serialversionuidinserializableclass",
+              "id": "detekt.style.SerialVersionUIDInSerializableClass",
+              "name": "SerialVersionUIDInSerializableClass",
+              "shortDescription": {
+                "text": "A class which implements the Serializable interface does not define a correct serialVersionUID field. The serialVersionUID field should be a private constant long value inside a companion object."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#spacingafterpackageandimports",
+              "id": "detekt.style.SpacingAfterPackageAndImports",
+              "name": "SpacingAfterPackageAndImports",
+              "shortDescription": {
+                "text": "Violation of the package and import statements declaration style detected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#stringshouldberawstring",
+              "id": "detekt.style.StringShouldBeRawString",
+              "name": "StringShouldBeRawString",
+              "shortDescription": {
+                "text": "The string can be converted to raw string."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#throwscount",
+              "id": "detekt.style.ThrowsCount",
+              "name": "ThrowsCount",
+              "shortDescription": {
+                "text": "Restrict the number of throw statements in methods."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#trailingwhitespace",
+              "id": "detekt.style.TrailingWhitespace",
+              "name": "TrailingWhitespace",
+              "shortDescription": {
+                "text": "Whitespaces at the end of a line are unnecessary and can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#trimmultilinerawstring",
+              "id": "detekt.style.TrimMultilineRawString",
+              "name": "TrimMultilineRawString",
+              "shortDescription": {
+                "text": "Multiline raw strings should be followed by `trimMargin()` or `trimIndent()`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#underscoresinnumericliterals",
+              "id": "detekt.style.UnderscoresInNumericLiterals",
+              "name": "UnderscoresInNumericLiterals",
+              "shortDescription": {
+                "text": "Report missing or invalid underscores in base 10 numbers. Numeric literals should be underscore separated to increase readability."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryany",
+              "id": "detekt.style.UnnecessaryAny",
+              "name": "UnnecessaryAny",
+              "shortDescription": {
+                "text": "The `any {  }` usage is unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryapply",
+              "id": "detekt.style.UnnecessaryApply",
+              "name": "UnnecessaryApply",
+              "shortDescription": {
+                "text": "The `apply` usage is unnecessary and can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessarybackticks",
+              "id": "detekt.style.UnnecessaryBackticks",
+              "name": "UnnecessaryBackticks",
+              "shortDescription": {
+                "text": "Backticks are unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessarybracesaroundtrailinglambda",
+              "id": "detekt.style.UnnecessaryBracesAroundTrailingLambda",
+              "name": "UnnecessaryBracesAroundTrailingLambda",
+              "shortDescription": {
+                "text": "Braces around trailing lambda is unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryfilter",
+              "id": "detekt.style.UnnecessaryFilter",
+              "name": "UnnecessaryFilter",
+              "shortDescription": {
+                "text": "`filter()` with other collection operations may be simplified."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryfullyqualifiedname",
+              "id": "detekt.style.UnnecessaryFullyQualifiedName",
+              "name": "UnnecessaryFullyQualifiedName",
+              "shortDescription": {
+                "text": "Unnecessary fully qualified names make code harder to read. Use imports instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryinheritance",
+              "id": "detekt.style.UnnecessaryInheritance",
+              "name": "UnnecessaryInheritance",
+              "shortDescription": {
+                "text": "The extended super type is unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryinnerclass",
+              "id": "detekt.style.UnnecessaryInnerClass",
+              "name": "UnnecessaryInnerClass",
+              "shortDescription": {
+                "text": "The 'inner' qualifier is unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessarylet",
+              "id": "detekt.style.UnnecessaryLet",
+              "name": "UnnecessaryLet",
+              "shortDescription": {
+                "text": "The `let` usage is unnecessary."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryparentheses",
+              "id": "detekt.style.UnnecessaryParentheses",
+              "name": "UnnecessaryParentheses",
+              "shortDescription": {
+                "text": "Unnecessary parentheses don't add any value to the code and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unnecessaryreversed",
+              "id": "detekt.style.UnnecessaryReversed",
+              "name": "UnnecessaryReversed",
+              "shortDescription": {
+                "text": "Use single sort operation instead of sorting followed by a reverse operation or vise-versa, eg. use `.sortedByDescending { .. }` instead of `.sortedBy { }.asReversed()`"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedimport",
+              "id": "detekt.style.UnusedImport",
+              "name": "UnusedImport",
+              "shortDescription": {
+                "text": "Unused Imports are dead code and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedparameter",
+              "id": "detekt.style.UnusedParameter",
+              "name": "UnusedParameter",
+              "shortDescription": {
+                "text": "Function parameter is unused and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedprivateclass",
+              "id": "detekt.style.UnusedPrivateClass",
+              "name": "UnusedPrivateClass",
+              "shortDescription": {
+                "text": "Private class is unused and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedprivatefunction",
+              "id": "detekt.style.UnusedPrivateFunction",
+              "name": "UnusedPrivateFunction",
+              "shortDescription": {
+                "text": "Private function is unused and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedprivateproperty",
+              "id": "detekt.style.UnusedPrivateProperty",
+              "name": "UnusedPrivateProperty",
+              "shortDescription": {
+                "text": "Property is unused and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#unusedvariable",
+              "id": "detekt.style.UnusedVariable",
+              "name": "UnusedVariable",
+              "shortDescription": {
+                "text": "Variable is unused and should be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useanyornoneinsteadoffind",
+              "id": "detekt.style.UseAnyOrNoneInsteadOfFind",
+              "name": "UseAnyOrNoneInsteadOfFind",
+              "shortDescription": {
+                "text": "Use `any` or `none` instead of `find` and `null` checks."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#usearrayliteralsinannotations",
+              "id": "detekt.style.UseArrayLiteralsInAnnotations",
+              "name": "UseArrayLiteralsInAnnotations",
+              "shortDescription": {
+                "text": "Array literals [...] should be preferred as they are more readable than `arrayOf(...)` expressions."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#usechecknotnull",
+              "id": "detekt.style.UseCheckNotNull",
+              "name": "UseCheckNotNull",
+              "shortDescription": {
+                "text": "Use checkNotNull() instead of check() for checking not-null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#usecheckorerror",
+              "id": "detekt.style.UseCheckOrError",
+              "name": "UseCheckOrError",
+              "shortDescription": {
+                "text": "Use check() or error() instead of throwing an IllegalStateException."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#usedataclass",
+              "id": "detekt.style.UseDataClass",
+              "name": "UseDataClass",
+              "shortDescription": {
+                "text": "Classes that do nothing but hold data should be replaced with a data class."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useemptycounterpart",
+              "id": "detekt.style.UseEmptyCounterpart",
+              "name": "UseEmptyCounterpart",
+              "shortDescription": {
+                "text": "Instantiation of an object's \"empty\" state should use the object's \"empty\" initializer."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useifemptyorifblank",
+              "id": "detekt.style.UseIfEmptyOrIfBlank",
+              "name": "UseIfEmptyOrIfBlank",
+              "shortDescription": {
+                "text": "Use `ifEmpty` or `ifBlank` instead of `isEmpty` or `isBlank` to assign a default value."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useifinsteadofwhen",
+              "id": "detekt.style.UseIfInsteadOfWhen",
+              "name": "UseIfInsteadOfWhen",
+              "shortDescription": {
+                "text": "Binary expressions are better expressed using an `if` expression than a `when` expression."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useisnullorempty",
+              "id": "detekt.style.UseIsNullOrEmpty",
+              "name": "UseIsNullOrEmpty",
+              "shortDescription": {
+                "text": "Use `isNullOrEmpty()` call instead of `x == null || x.isEmpty()`."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#uselet",
+              "id": "detekt.style.UseLet",
+              "name": "UseLet",
+              "shortDescription": {
+                "text": "Use `?.let {}` instead of if/else with a null block when checking for nullable values"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#useorempty",
+              "id": "detekt.style.UseOrEmpty",
+              "name": "UseOrEmpty",
+              "shortDescription": {
+                "text": "Use `orEmpty()` call instead of `?:` with empty collection factory methods"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#userequire",
+              "id": "detekt.style.UseRequire",
+              "name": "UseRequire",
+              "shortDescription": {
+                "text": "Use require() instead of throwing an IllegalArgumentException."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#userequirenotnull",
+              "id": "detekt.style.UseRequireNotNull",
+              "name": "UseRequireNotNull",
+              "shortDescription": {
+                "text": "Use requireNotNull() instead of require() for checking not-null."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#usesumofinsteadofflatmapsize",
+              "id": "detekt.style.UseSumOfInsteadOfFlatMapSize",
+              "name": "UseSumOfInsteadOfFlatMapSize",
+              "shortDescription": {
+                "text": "Use `sumOf` instead of `flatMap` and `size/count` calls"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#uselesscallonnotnull",
+              "id": "detekt.style.UselessCallOnNotNull",
+              "name": "UselessCallOnNotNull",
+              "shortDescription": {
+                "text": "This call on a non-null reference may be reduced or removed. Some calls are intended to be called on nullable collection or text types (e.g. `String?`).When this call is used on a reference to a non-null type (e.g. `String`) it is redundant and will have no effect, so it can be removed."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#utilityclasswithpublicconstructor",
+              "id": "detekt.style.UtilityClassWithPublicConstructor",
+              "name": "UtilityClassWithPublicConstructor",
+              "shortDescription": {
+                "text": "The class declaration is unnecessary because it only contains utility functions. An object declaration should be used instead."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#varcouldbeval",
+              "id": "detekt.style.VarCouldBeVal",
+              "name": "VarCouldBeVal",
+              "shortDescription": {
+                "text": "Var declaration could be val."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/style#wildcardimport",
+              "id": "detekt.style.WildcardImport",
+              "name": "WildcardImport",
+              "shortDescription": {
+                "text": "Wildcard imports should be replaced with imports using fully qualified class names. Wildcard imports can lead to naming conflicts. A library update can introduce naming clashes with your classes which results in compilation errors."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#trailingcommaondeclarationsite",
+              "id": "detekt.ktlint.TrailingCommaOnDeclarationSite",
+              "name": "TrailingCommaOnDeclarationSite",
+              "shortDescription": {
+                "text": "Rule to mandate/forbid trailing commas at declaration sites"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#trailingcommaoncallsite",
+              "id": "detekt.ktlint.TrailingCommaOnCallSite",
+              "name": "TrailingCommaOnCallSite",
+              "shortDescription": {
+                "text": "Rule to mandate/forbid trailing commas at call sites"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#annotationonseparateline",
+              "id": "detekt.ktlint.AnnotationOnSeparateLine",
+              "name": "AnnotationOnSeparateLine",
+              "shortDescription": {
+                "text": "Multiple annotations should be placed on separate lines."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#annotationspacing",
+              "id": "detekt.ktlint.AnnotationSpacing",
+              "name": "AnnotationSpacing",
+              "shortDescription": {
+                "text": "There should not be empty lines between an annotation and the object that it's annotating"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#argumentlistwrapping",
+              "id": "detekt.ktlint.ArgumentListWrapping",
+              "name": "ArgumentListWrapping",
+              "shortDescription": {
+                "text": "Reports incorrect argument list wrapping"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#backingpropertynaming",
+              "id": "detekt.ktlint.BackingPropertyNaming",
+              "name": "BackingPropertyNaming",
+              "shortDescription": {
+                "text": "Reports incorrect property name."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#binaryexpressionwrapping",
+              "id": "detekt.ktlint.BinaryExpressionWrapping",
+              "name": "BinaryExpressionWrapping",
+              "shortDescription": {
+                "text": "Wrap binary expression at the operator reference if the binary expression does not fit on the line"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#blanklinebeforedeclaration",
+              "id": "detekt.ktlint.BlankLineBeforeDeclaration",
+              "name": "BlankLineBeforeDeclaration",
+              "shortDescription": {
+                "text": "A blank line is required before any class or function declaration, and before any list of top level or class properties."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#blanklinebetweenwhenconditions",
+              "id": "detekt.ktlint.BlankLineBetweenWhenConditions",
+              "name": "BlankLineBetweenWhenConditions",
+              "shortDescription": {
+                "text": "Consistently add or remove blank lines between when-conditions in a when-statement"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#blockcommentinitialstaralignment",
+              "id": "detekt.ktlint.BlockCommentInitialStarAlignment",
+              "name": "BlockCommentInitialStarAlignment",
+              "shortDescription": {
+                "text": "Detect the alignment of the initial star in a block comment."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#chainmethodcontinuation",
+              "id": "detekt.ktlint.ChainMethodContinuation",
+              "name": "ChainMethodContinuation",
+              "shortDescription": {
+                "text": "Checks if condition chaining is wrapped right"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#chainwrapping",
+              "id": "detekt.ktlint.ChainWrapping",
+              "name": "ChainWrapping",
+              "shortDescription": {
+                "text": "Checks if condition chaining is wrapped right"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#classname",
+              "id": "detekt.ktlint.ClassName",
+              "name": "ClassName",
+              "shortDescription": {
+                "text": "Class or object name should start with an uppercase letter and use camel case."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#classsignature",
+              "id": "detekt.ktlint.ClassSignature",
+              "name": "ClassSignature",
+              "shortDescription": {
+                "text": "Ensure class signatures have a consistent format."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#commentspacing",
+              "id": "detekt.ktlint.CommentSpacing",
+              "name": "CommentSpacing",
+              "shortDescription": {
+                "text": "Checks if comments have the right spacing"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#commentwrapping",
+              "id": "detekt.ktlint.CommentWrapping",
+              "name": "CommentWrapping",
+              "shortDescription": {
+                "text": "Reports mis-indented code"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#conditionwrapping",
+              "id": "detekt.ktlint.ConditionWrapping",
+              "name": "ConditionWrapping",
+              "shortDescription": {
+                "text": "Conditions should be wrapped when expression doesn't fit on one line"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#contextreceiverlistwrapping",
+              "id": "detekt.ktlint.ContextReceiverListWrapping",
+              "name": "ContextReceiverListWrapping",
+              "shortDescription": {
+                "text": "Wraps the context receiver list containing a context parameter"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#contextreceivermapping",
+              "id": "detekt.ktlint.ContextReceiverMapping",
+              "name": "ContextReceiverMapping",
+              "shortDescription": {
+                "text": "Reports mis-indented code"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#enumentrynamecase",
+              "id": "detekt.ktlint.EnumEntryNameCase",
+              "name": "EnumEntryNameCase",
+              "shortDescription": {
+                "text": "Reports enum entries with names that don't meet standard conventions."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#enumwrapping",
+              "id": "detekt.ktlint.EnumWrapping",
+              "name": "EnumWrapping",
+              "shortDescription": {
+                "text": "An enum should be a single line, or each enum entry has to be placed on a separate line."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#expressionoperandwrapping",
+              "id": "detekt.ktlint.ExpressionOperandWrapping",
+              "name": "ExpressionOperandWrapping",
+              "shortDescription": {
+                "text": "Wraps each operand in a multiline expression to a separate line"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#filename",
+              "id": "detekt.ktlint.Filename",
+              "name": "Filename",
+              "shortDescription": {
+                "text": "Checks if top level class matches the filename"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#finalnewline",
+              "id": "detekt.ktlint.FinalNewline",
+              "name": "FinalNewline",
+              "shortDescription": {
+                "text": "Detects missing final newlines"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#funkeywordspacing",
+              "id": "detekt.ktlint.FunKeywordSpacing",
+              "name": "FunKeywordSpacing",
+              "shortDescription": {
+                "text": "Checks the spacing after the fun keyword."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionexpressionbody",
+              "id": "detekt.ktlint.FunctionExpressionBody",
+              "name": "FunctionExpressionBody",
+              "shortDescription": {
+                "text": "Function body containing only a return or throw expression should be an expression body."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionliteral",
+              "id": "detekt.ktlint.FunctionLiteral",
+              "name": "FunctionLiteral",
+              "shortDescription": {
+                "text": "Parameters and -> of a function literal should be on the same line as the opening brace."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionname",
+              "id": "detekt.ktlint.FunctionName",
+              "name": "FunctionName",
+              "shortDescription": {
+                "text": "Function name should start with a lowercase letter (except factory methods) and use camel case."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionreturntypespacing",
+              "id": "detekt.ktlint.FunctionReturnTypeSpacing",
+              "name": "FunctionReturnTypeSpacing",
+              "shortDescription": {
+                "text": "Checks the spacing between colon and return type."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionsignature",
+              "id": "detekt.ktlint.FunctionSignature",
+              "name": "FunctionSignature",
+              "shortDescription": {
+                "text": "Format signature to be single when possible, multiple lines otherwise."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functionstartofbodyspacing",
+              "id": "detekt.ktlint.FunctionStartOfBodySpacing",
+              "name": "FunctionStartOfBodySpacing",
+              "shortDescription": {
+                "text": "Check for consistent spacing before start of function body."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functiontypemodifierspacing",
+              "id": "detekt.ktlint.FunctionTypeModifierSpacing",
+              "name": "FunctionTypeModifierSpacing",
+              "shortDescription": {
+                "text": "Enforce a single whitespace between the modifier list and the function type."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#functiontypereferencespacing",
+              "id": "detekt.ktlint.FunctionTypeReferenceSpacing",
+              "name": "FunctionTypeReferenceSpacing",
+              "shortDescription": {
+                "text": "Checks the spacing before and after the angle brackets of a type argument list."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#ifelsebracing",
+              "id": "detekt.ktlint.IfElseBracing",
+              "name": "IfElseBracing",
+              "shortDescription": {
+                "text": "All branches must be wrapped in curly braces if any branches are wrapped."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#ifelsewrapping",
+              "id": "detekt.ktlint.IfElseWrapping",
+              "name": "IfElseWrapping",
+              "shortDescription": {
+                "text": "A single line if-statement may contain no more than one else-branch."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#importordering",
+              "id": "detekt.ktlint.ImportOrdering",
+              "name": "ImportOrdering",
+              "shortDescription": {
+                "text": "Detects imports in non default order"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#indentation",
+              "id": "detekt.ktlint.Indentation",
+              "name": "Indentation",
+              "shortDescription": {
+                "text": "Reports mis-indented code"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#kdoc",
+              "id": "detekt.ktlint.Kdoc",
+              "name": "Kdoc",
+              "shortDescription": {
+                "text": "Only allow KDoc when comments are in a location that can be converted to public documentation"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#kdocwrapping",
+              "id": "detekt.ktlint.KdocWrapping",
+              "name": "KdocWrapping",
+              "shortDescription": {
+                "text": "Reports mis-indented code"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#maximumlinelength",
+              "id": "detekt.ktlint.MaximumLineLength",
+              "name": "MaximumLineLength",
+              "shortDescription": {
+                "text": "Reports lines with exceeded length"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#mixedconditionoperators",
+              "id": "detekt.ktlint.MixedConditionOperators",
+              "name": "MixedConditionOperators",
+              "shortDescription": {
+                "text": "Conditions should not use a both '&&' and '||' operators between operators at the same level"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#modifierlistspacing",
+              "id": "detekt.ktlint.ModifierListSpacing",
+              "name": "ModifierListSpacing",
+              "shortDescription": {
+                "text": "Checks the spacing between the modifiers in and after the last modifier in a modifier list."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#modifierordering",
+              "id": "detekt.ktlint.ModifierOrdering",
+              "name": "ModifierOrdering",
+              "shortDescription": {
+                "text": "Detects modifiers in non default order"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#multilineifelse",
+              "id": "detekt.ktlint.MultiLineIfElse",
+              "name": "MultiLineIfElse",
+              "shortDescription": {
+                "text": "Detects multiline if-else statements without braces"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#multilineexpressionwrapping",
+              "id": "detekt.ktlint.MultilineExpressionWrapping",
+              "name": "MultilineExpressionWrapping",
+              "shortDescription": {
+                "text": "Multiline expression on the right hand side of an expression must start on a separate line."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#multilineloop",
+              "id": "detekt.ktlint.MultilineLoop",
+              "name": "MultilineLoop",
+              "shortDescription": {
+                "text": "Detects multiline loop statements without braces"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noblanklinebeforerbrace",
+              "id": "detekt.ktlint.NoBlankLineBeforeRbrace",
+              "name": "NoBlankLineBeforeRbrace",
+              "shortDescription": {
+                "text": "Detects blank lines before rbraces"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noblanklineinlist",
+              "id": "detekt.ktlint.NoBlankLineInList",
+              "name": "NoBlankLineInList",
+              "shortDescription": {
+                "text": "Disallow blank lines in lists before, between or after any list element."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noblanklinesinchainedmethodcalls",
+              "id": "detekt.ktlint.NoBlankLinesInChainedMethodCalls",
+              "name": "NoBlankLinesInChainedMethodCalls",
+              "shortDescription": {
+                "text": "Detects blank lines in chained method rules."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noconsecutiveblanklines",
+              "id": "detekt.ktlint.NoConsecutiveBlankLines",
+              "name": "NoConsecutiveBlankLines",
+              "shortDescription": {
+                "text": "Reports consecutive blank lines"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noconsecutivecomments",
+              "id": "detekt.ktlint.NoConsecutiveComments",
+              "name": "NoConsecutiveComments",
+              "shortDescription": {
+                "text": "Disallow consecutive comments in most cases."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noemptyclassbody",
+              "id": "detekt.ktlint.NoEmptyClassBody",
+              "name": "NoEmptyClassBody",
+              "shortDescription": {
+                "text": "Reports empty class bodies"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noemptyfile",
+              "id": "detekt.ktlint.NoEmptyFile",
+              "name": "NoEmptyFile",
+              "shortDescription": {
+                "text": "Kotlin files must contain at least one declaration"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noemptyfirstlineinclassbody",
+              "id": "detekt.ktlint.NoEmptyFirstLineInClassBody",
+              "name": "NoEmptyFirstLineInClassBody",
+              "shortDescription": {
+                "text": "Disallow blank lines at start of a class body."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#noemptyfirstlineinmethodblock",
+              "id": "detekt.ktlint.NoEmptyFirstLineInMethodBlock",
+              "name": "NoEmptyFirstLineInMethodBlock",
+              "shortDescription": {
+                "text": "Reports methods that have an empty first line."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nolinebreakafterelse",
+              "id": "detekt.ktlint.NoLineBreakAfterElse",
+              "name": "NoLineBreakAfterElse",
+              "shortDescription": {
+                "text": "Reports line breaks after else"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nolinebreakbeforeassignment",
+              "id": "detekt.ktlint.NoLineBreakBeforeAssignment",
+              "name": "NoLineBreakBeforeAssignment",
+              "shortDescription": {
+                "text": "Reports line breaks before assignment"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nomultiplespaces",
+              "id": "detekt.ktlint.NoMultipleSpaces",
+              "name": "NoMultipleSpaces",
+              "shortDescription": {
+                "text": "Reports multiple space usages"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nosemicolons",
+              "id": "detekt.ktlint.NoSemicolons",
+              "name": "NoSemicolons",
+              "shortDescription": {
+                "text": "Detects semicolons"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nosinglelineblockcomment",
+              "id": "detekt.ktlint.NoSingleLineBlockComment",
+              "name": "NoSingleLineBlockComment",
+              "shortDescription": {
+                "text": "Reports single block line comments"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#notrailingspaces",
+              "id": "detekt.ktlint.NoTrailingSpaces",
+              "name": "NoTrailingSpaces",
+              "shortDescription": {
+                "text": "Detects trailing spaces"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nounitreturn",
+              "id": "detekt.ktlint.NoUnitReturn",
+              "name": "NoUnitReturn",
+              "shortDescription": {
+                "text": "Detects optional 'Unit' return types"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nounusedimports",
+              "id": "detekt.ktlint.NoUnusedImports",
+              "name": "NoUnusedImports",
+              "shortDescription": {
+                "text": "Detects unused imports"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nowildcardimports",
+              "id": "detekt.ktlint.NoWildcardImports",
+              "name": "NoWildcardImports",
+              "shortDescription": {
+                "text": "Detects wildcard imports"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#nullabletypespacing",
+              "id": "detekt.ktlint.NullableTypeSpacing",
+              "name": "NullableTypeSpacing",
+              "shortDescription": {
+                "text": "Ensure no spaces in nullable type."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#packagename",
+              "id": "detekt.ktlint.PackageName",
+              "name": "PackageName",
+              "shortDescription": {
+                "text": "Checks package name is formatted correctly"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#parameterlistspacing",
+              "id": "detekt.ktlint.ParameterListSpacing",
+              "name": "ParameterListSpacing",
+              "shortDescription": {
+                "text": "Ensure consistent spacing inside the parameter list."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#parameterlistwrapping",
+              "id": "detekt.ktlint.ParameterListWrapping",
+              "name": "ParameterListWrapping",
+              "shortDescription": {
+                "text": "Detects mis-aligned parameter lists"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#parameterwrapping",
+              "id": "detekt.ktlint.ParameterWrapping",
+              "name": "ParameterWrapping",
+              "shortDescription": {
+                "text": "Type or value of functions and class parameters must wrap if parameters don't fit on a single line"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#propertyname",
+              "id": "detekt.ktlint.PropertyName",
+              "name": "PropertyName",
+              "shortDescription": {
+                "text": "Reports incorrect property name."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#propertywrapping",
+              "id": "detekt.ktlint.PropertyWrapping",
+              "name": "PropertyWrapping",
+              "shortDescription": {
+                "text": "Type or value of properties must wrap if parameters don't fit on a single line"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundanglebrackets",
+              "id": "detekt.ktlint.SpacingAroundAngleBrackets",
+              "name": "SpacingAroundAngleBrackets",
+              "shortDescription": {
+                "text": "Reports spaces around angle brackets"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundcolon",
+              "id": "detekt.ktlint.SpacingAroundColon",
+              "name": "SpacingAroundColon",
+              "shortDescription": {
+                "text": "Reports spaces around colons"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundcomma",
+              "id": "detekt.ktlint.SpacingAroundComma",
+              "name": "SpacingAroundComma",
+              "shortDescription": {
+                "text": "Reports spaces around commas"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundcurly",
+              "id": "detekt.ktlint.SpacingAroundCurly",
+              "name": "SpacingAroundCurly",
+              "shortDescription": {
+                "text": "Reports spaces around curly braces"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingarounddot",
+              "id": "detekt.ktlint.SpacingAroundDot",
+              "name": "SpacingAroundDot",
+              "shortDescription": {
+                "text": "Reports spaces around member invocation operator (dot)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingarounddoublecolon",
+              "id": "detekt.ktlint.SpacingAroundDoubleColon",
+              "name": "SpacingAroundDoubleColon",
+              "shortDescription": {
+                "text": "Reports spaces around double colons"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundkeyword",
+              "id": "detekt.ktlint.SpacingAroundKeyword",
+              "name": "SpacingAroundKeyword",
+              "shortDescription": {
+                "text": "Reports spaces around keywords"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundoperators",
+              "id": "detekt.ktlint.SpacingAroundOperators",
+              "name": "SpacingAroundOperators",
+              "shortDescription": {
+                "text": "Reports spaces around operators"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundparens",
+              "id": "detekt.ktlint.SpacingAroundParens",
+              "name": "SpacingAroundParens",
+              "shortDescription": {
+                "text": "Reports spaces around parentheses"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundrangeoperator",
+              "id": "detekt.ktlint.SpacingAroundRangeOperator",
+              "name": "SpacingAroundRangeOperator",
+              "shortDescription": {
+                "text": "Reports spaces around range operator"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundsquarebrackets",
+              "id": "detekt.ktlint.SpacingAroundSquareBrackets",
+              "name": "SpacingAroundSquareBrackets",
+              "shortDescription": {
+                "text": "Reports spaces around square brackets"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingaroundunaryoperator",
+              "id": "detekt.ktlint.SpacingAroundUnaryOperator",
+              "name": "SpacingAroundUnaryOperator",
+              "shortDescription": {
+                "text": "Reports spaces around unary operator"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingbetweendeclarationswithannotations",
+              "id": "detekt.ktlint.SpacingBetweenDeclarationsWithAnnotations",
+              "name": "SpacingBetweenDeclarationsWithAnnotations",
+              "shortDescription": {
+                "text": "Declarations and declarations with annotations should have an empty space between."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingbetweendeclarationswithcomments",
+              "id": "detekt.ktlint.SpacingBetweenDeclarationsWithComments",
+              "name": "SpacingBetweenDeclarationsWithComments",
+              "shortDescription": {
+                "text": "Declarations and declarations with comments should have an empty space between."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#spacingbetweenfunctionnameandopeningparenthesis",
+              "id": "detekt.ktlint.SpacingBetweenFunctionNameAndOpeningParenthesis",
+              "name": "SpacingBetweenFunctionNameAndOpeningParenthesis",
+              "shortDescription": {
+                "text": "Ensure consistent spacing between function name and opening parenthesis."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#statementwrapping",
+              "id": "detekt.ktlint.StatementWrapping",
+              "name": "StatementWrapping",
+              "shortDescription": {
+                "text": "Block body statements must be placed on a different line than the braces of the body block."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#stringtemplate",
+              "id": "detekt.ktlint.StringTemplate",
+              "name": "StringTemplate",
+              "shortDescription": {
+                "text": "Detects simplifications in template strings"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#stringtemplateindent",
+              "id": "detekt.ktlint.StringTemplateIndent",
+              "name": "StringTemplateIndent",
+              "shortDescription": {
+                "text": "Enforce consistent multiline string template indentation which are post-fixed with .trimIndent()"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#thenspacing",
+              "id": "detekt.ktlint.ThenSpacing",
+              "name": "ThenSpacing",
+              "shortDescription": {
+                "text": "Enforces consistent spacing around the `then` block in an `if`-statement"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#trycatchfinallyspacing",
+              "id": "detekt.ktlint.TryCatchFinallySpacing",
+              "name": "TryCatchFinallySpacing",
+              "shortDescription": {
+                "text": "Enforce consistent spacing in try-catch-finally blocks."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#typeargumentcomment",
+              "id": "detekt.ktlint.TypeArgumentComment",
+              "name": "TypeArgumentComment",
+              "shortDescription": {
+                "text": "Detect discouraged type argument comment locations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#typeargumentlistspacing",
+              "id": "detekt.ktlint.TypeArgumentListSpacing",
+              "name": "TypeArgumentListSpacing",
+              "shortDescription": {
+                "text": "Reports spaces in the type reference before a function."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#typeparametercomment",
+              "id": "detekt.ktlint.TypeParameterComment",
+              "name": "TypeParameterComment",
+              "shortDescription": {
+                "text": "Detect discouraged type parameter comment locations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#typeparameterlistspacing",
+              "id": "detekt.ktlint.TypeParameterListSpacing",
+              "name": "TypeParameterListSpacing",
+              "shortDescription": {
+                "text": "Check spacing after a type parameter list in function and class declarations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#unnecessaryparenthesesbeforetrailinglambda",
+              "id": "detekt.ktlint.UnnecessaryParenthesesBeforeTrailingLambda",
+              "name": "UnnecessaryParenthesesBeforeTrailingLambda",
+              "shortDescription": {
+                "text": "Ensures there are no unnecessary parentheses before a trailing lambda"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#valueargumentcomment",
+              "id": "detekt.ktlint.ValueArgumentComment",
+              "name": "ValueArgumentComment",
+              "shortDescription": {
+                "text": "Detect discouraged value argument comment locations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#valueparametercomment",
+              "id": "detekt.ktlint.ValueParameterComment",
+              "name": "ValueParameterComment",
+              "shortDescription": {
+                "text": "Detect discouraged value parameter comment locations."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": false,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#whenentrybracing",
+              "id": "detekt.ktlint.WhenEntryBracing",
+              "name": "WhenEntryBracing",
+              "shortDescription": {
+                "text": "Enforce consistent usages of braces inside the when-statement."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://detekt.dev/docs/2.0.0-alpha.3/rules/ktlint#wrapping",
+              "id": "detekt.ktlint.Wrapping",
+              "name": "Wrapping",
+              "shortDescription": {
+                "text": "Reports missing newlines (e.g. between parentheses of a multi-line function call"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
