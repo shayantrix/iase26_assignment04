@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.report.CampaignSummaryJsonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T16:22:17.697Z" hostname="SIMBA" time="0.002">
-  <properties/>
-  <testcase name="json summary exposes the stable machine-readable fields()" classname="de.seuhd.ktfuzzer.report.CampaignSummaryJsonTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
