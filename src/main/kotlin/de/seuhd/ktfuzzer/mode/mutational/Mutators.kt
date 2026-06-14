@@ -1,5 +1,6 @@
 package de.seuhd.ktfuzzer.mode.mutational
 
+import kotlin.collections.count
 import kotlin.random.Random
 import kotlin.text.count
 import kotlin.text.deleteAt
@@ -38,7 +39,7 @@ internal object Mutators {
         val rnInt = random.nextInt(0, len+1)
         // with deleteAt we can delete at specific index
 
-        //make StringBuilder object to access deleteAt(index) func
+
         val newString = StringBuilder(input)
 
         val lenAlphabet = alphabet.count()
@@ -70,12 +71,14 @@ internal object Mutators {
         //random chose of char
         val len = input.count()
         // have a random number in the range of len
-        val rnInt = random.nextInt(1, len)
+        val rnInt = random.nextInt(len)
         // with deleteAt we can delete at specific index
-
-        //make StringBuilder object to access deleteAt(index) func
         val newString = StringBuilder(input)
-        newString.deleteAt(rnInt)
+        for (i in 0..random.nextInt()){
+            newString.insert(rnInt, input[i])
+        }
+        //make StringBuilder object to access deleteAt(index) func
+
         return newString.toString()
 
     }
