@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-06-14T23:07:15.153Z" hostname="fedora.fritz.box" time="0.196">
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-06-14T23:53:17.166Z" hostname="fedora.fritz.box" time="0.144">
   <properties/>
-  <testcase name="repeatRandomCharacter on a single character yields a run of that character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.021"/>
-  <testcase name="mutators never throw on arbitrary input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.102"/>
-  <testcase name="flipRandomCharacter changes exactly one character by a single bit()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.002"/>
+  <testcase name="repeatRandomCharacter on a single character yields a run of that character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.0"/>
+  <testcase name="mutators never throw on arbitrary input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.094"/>
+  <testcase name="flipRandomCharacter changes exactly one character by a single bit()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
   <testcase name="the length-preserving mutators are no-ops on empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
-  <testcase name="deleteRandomCharacter removes exactly one character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
-  <testcase name="delete shrinks by one and insert grows by one on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.015"/>
+  <testcase name="deleteRandomCharacter removes exactly one character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.0"/>
+  <testcase name="delete shrinks by one and insert grows by one on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.023"/>
   <testcase name="insertRandomCharacter on empty input yields a single character()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
-  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.0"/>
-  <testcase name="flip preserves length on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.024"/>
+  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
+  <testcase name="flip preserves length on non-empty input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.02"/>
   <testcase name="repeatRandomCharacter grows the input()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

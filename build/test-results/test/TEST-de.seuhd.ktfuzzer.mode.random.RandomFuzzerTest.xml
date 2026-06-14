@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.mode.random.RandomFuzzerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-06-14T23:53:17.320Z" hostname="fedora.fritz.box" time="0.005">
+  <properties/>
+  <testcase name="an empty alphabet or an inverted length range is rejected()" classname="de.seuhd.ktfuzzer.mode.random.RandomFuzzerTest" time="0.001"/>
+  <testcase name="equal min and max give a fixed length()" classname="de.seuhd.ktfuzzer.mode.random.RandomFuzzerTest" time="0.0"/>
+  <testcase name="length stays within bounds and characters come from the alphabet()" classname="de.seuhd.ktfuzzer.mode.random.RandomFuzzerTest" time="0.002"/>
+  <testcase name="the same seed produces the same sequence()" classname="de.seuhd.ktfuzzer.mode.random.RandomFuzzerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

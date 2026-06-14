@@ -1,5 +1,7 @@
 package de.seuhd.ktfuzzer.mode.mutational
 
+import de.seuhd.ktfuzzer.mode.mutational.Mutators
+
 import de.seuhd.ktfuzzer.mode.Fuzzer
 import kotlin.random.Random
 
@@ -43,8 +45,18 @@ internal class MutationalFuzzer(
     }
 
     /** Applies one randomly chosen mutator to [input]. */
-    internal fun mutate(input: String, random: Random): String =
-        TODO("Exercise 1: apply one randomly chosen mutator from Mutators")
+    internal fun mutate(input: String, random: Random): String{
+        // we have to randomly pick 1 of 4 mutators
+        val chosen = random.nextInt(4)
+        return when (chosen){
+            0 -> Mutators.deleteRandomCharacter(input, random)
+            1 -> Mutators.insertRandomCharacter(input, alphabet, random)
+            2 -> Mutators.flipRandomCharacter(input, random)
+            3 -> Mutators.repeatRandomCharacter(input, random)
+            else -> throw IllegalStateException("Unexpected mutator index")
+        }
+    }
+        //("Exercise 1: apply one randomly chosen mutator from Mutators")
 
     private companion object {
         /** Fewest [mutate] applications used to build a candidate when no minimum is passed. */

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" tests="6" skipped="0" failures="6" errors="0" timestamp="2026-06-14T23:53:17.133Z" hostname="fedora.fritz.box" time="0.023">
+  <properties/>
+  <testcase name="deep nesting is one linear chain, not a branching tree()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.008">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandToRecursiveDepth(GrammarFuzzer.kt:79)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:67)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.deep nesting is one linear chain, not a branching tree(GrammarFuzzerTest.kt:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="the same seed produces the same documents()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.003">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandWithLimit(GrammarFuzzer.kt:86)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:71)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.the same seed produces the same documents(GrammarFuzzerTest.kt:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="recursion-depth generation reaches the requested depth for any grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.003">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandToRecursiveDepth(GrammarFuzzer.kt:79)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:67)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.recursion-depth generation reaches the requested depth for any grammar(GrammarFuzzerTest.kt:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="generated documents render grammar terminals only()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandToRecursiveDepth(GrammarFuzzer.kt:79)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:67)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.generated documents render grammar terminals only(GrammarFuzzerTest.kt:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="the recursion-depth counter matches the rendered nesting on a controlled grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.002">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandToRecursiveDepth(GrammarFuzzer.kt:79)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:67)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.the recursion-depth counter matches the rendered nesting on a controlled grammar(GrammarFuzzerTest.kt:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="broad recursive growth can use sibling recursive repetitions()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 2: expand one pending derivation-tree node
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandNode(GrammarFuzzer.kt:120)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandOne(GrammarFuzzer.kt:110)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandToRecursiveDepth(GrammarFuzzer.kt:79)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.expandTree(GrammarFuzzer.kt:67)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzer.fuzz(GrammarFuzzer.kt:53)
+	at de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest.broad recursive growth can use sibling recursive repetitions(GrammarFuzzerTest.kt:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
