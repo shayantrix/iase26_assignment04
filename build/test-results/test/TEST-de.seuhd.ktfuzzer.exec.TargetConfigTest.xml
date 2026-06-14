@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.exec.TargetConfigTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-06-13T16:22:17.323Z" hostname="SIMBA" time="0.083">
+  <properties/>
+  <testcase name="target fields are required(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.029"/>
+  <testcase name="expected exit codes default to accepted parser exits(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.009"/>
+  <testcase name="a missing config file is a failure, not an exception(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.003"/>
+  <testcase name="blank required values are rejected(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.012"/>
+  <testcase name="each binary path is required(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.006"/>
+  <testcase name="a full config parses every field(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.006"/>
+  <testcase name="malformed YAML is a failure, not an exception(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.007"/>
+  <testcase name="binaryFor maps JVM OS names to configured binaries(Path)" classname="de.seuhd.ktfuzzer.exec.TargetConfigTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

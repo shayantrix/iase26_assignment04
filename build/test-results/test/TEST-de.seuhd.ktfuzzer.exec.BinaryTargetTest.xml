@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.exec.BinaryTargetTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2026-06-13T16:22:17.294Z" hostname="SIMBA" time="0.023">
+  <properties/>
+  <testcase name="the expected set is configurable(Path)" classname="de.seuhd.ktfuzzer.exec.BinaryTargetTest" time="0.009">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeFalse(Assumptions.java:191)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.script(BinaryTargetTest.kt:59)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.the expected set is configurable(BinaryTargetTest.kt:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="expected exit codes are normal runs(Path)" classname="de.seuhd.ktfuzzer.exec.BinaryTargetTest" time="0.007">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeFalse(Assumptions.java:191)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.script(BinaryTargetTest.kt:59)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.expected exit codes are normal runs(BinaryTargetTest.kt:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <testcase name="any code outside the expected set is a crash that preserves output(Path)" classname="de.seuhd.ktfuzzer.exec.BinaryTargetTest" time="0.005">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: temporary shell scripts are Unix-only
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeFalse(Assumptions.java:191)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.script(BinaryTargetTest.kt:59)
+	at de.seuhd.ktfuzzer.exec.BinaryTargetTest.any code outside the expected set is a crash that preserves output(BinaryTargetTest.kt:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

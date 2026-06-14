@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" tests="7" skipped="0" failures="4" errors="0" timestamp="2026-06-13T16:22:17.479Z" hostname="SIMBA" time="0.01">
+  <properties/>
+  <testcase name="the mutation count bounds must be positive and ordered()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001"/>
+  <testcase name="an empty population is rejected()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001"/>
+  <testcase name="fuzz returns each seed once, in order, before any candidate()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001"/>
+  <testcase name="mutate is reproducible from the same Random()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.mutate$iase26_assignment04(MutationalFuzzer.kt:47)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest.mutate is reproducible from the same Random(MutationalFuzzerTest.kt:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="createCandidate mutates a seed and is reproducible()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.mutate$iase26_assignment04(MutationalFuzzer.kt:47)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.createCandidate$iase26_assignment04(MutationalFuzzer.kt:40)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest.createCandidate mutates a seed and is reproducible(MutationalFuzzerTest.kt:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="fuzz produces mutated candidates once the population is exhausted()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.mutate$iase26_assignment04(MutationalFuzzer.kt:47)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.createCandidate$iase26_assignment04(MutationalFuzzer.kt:40)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.fuzz(MutationalFuzzer.kt:34)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest.fuzz produces mutated candidates once the population is exhausted(MutationalFuzzerTest.kt:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="mutate changes a non-empty seed()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001">
+    <failure message="kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators" type="kotlin.NotImplementedError">kotlin.NotImplementedError: An operation is not implemented: Exercise 1: apply one randomly chosen mutator from Mutators
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzer.mutate$iase26_assignment04(MutationalFuzzer.kt:47)
+	at de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest.mutate changes a non-empty seed(MutationalFuzzerTest.kt:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

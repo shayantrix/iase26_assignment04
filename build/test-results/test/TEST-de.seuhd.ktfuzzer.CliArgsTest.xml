@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.CliArgsTest" tests="20" skipped="0" failures="1" errors="0" timestamp="2026-06-13T16:22:16.646Z" hostname="SIMBA" time="0.207">
+  <properties/>
+  <testcase name="negative max-executions is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.103"/>
+  <testcase name="--target sets the config path()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.029">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;targets/c/target.yaml&gt; but was: &lt;targets\c\target.yaml&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;targets/c/target.yaml&gt; but was: &lt;targets\c\target.yaml&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at de.seuhd.ktfuzzer.CliArgsTest.--target sets the config path(CliArgsTest.kt:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</failure>
+  </testcase>
+  <testcase name="the output directory is parsed()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <testcase name="each mode value parses()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.0"/>
+  <testcase name="grammar numeric controls validate their ranges()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="no arguments yields the default config()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="an unknown mode is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.003"/>
+  <testcase name="a positional argument is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="an unknown flag is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <testcase name="negative lengths and an inverted range are usage errors()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.003"/>
+  <testcase name="max-executions of zero means unbounded()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="help is recognized in both forms()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="non-numeric values for numeric flags are usage errors()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="a non-positive run timeout is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="a negative time limit is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="a flag missing its value is a usage error()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.002"/>
+  <testcase name="numeric flags are parsed()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <testcase name="length flags are parsed()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <testcase name="grammar recursion strategy parses()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <testcase name="boolean flags are parsed()" classname="de.seuhd.ktfuzzer.CliArgsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
