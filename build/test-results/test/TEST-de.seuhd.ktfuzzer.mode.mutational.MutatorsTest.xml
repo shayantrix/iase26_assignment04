@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T15:42:58.908Z" hostname="dhcp664-236.laptop-wlc.uni-heidelberg.de" time="0.038">
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-14T13:56:41.534Z" hostname="fedora.fritz.box" time="0.036">
   <properties/>
-  <testcase name="insertRandomCharacter adds exactly one character from the alphabet()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.021"/>
+  <testcase name="flipRandomCharacter changes exactly one character by a single bit()" classname="de.seuhd.ktfuzzer.mode.mutational.MutatorsTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

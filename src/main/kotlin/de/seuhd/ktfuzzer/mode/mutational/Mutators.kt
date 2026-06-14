@@ -3,6 +3,7 @@ package de.seuhd.ktfuzzer.mode.mutational
 import kotlin.random.Random
 import kotlin.text.count
 import kotlin.text.deleteAt
+import kotlin.text.Charsets
 
 
 
@@ -47,10 +48,36 @@ internal object Mutators {
     }
 
     /** Flips one randomly chosen low bit of one randomly chosen character. */
-    fun flipRandomCharacter(input: String, random: Random): String =
-        TODO("Exercise 1: flip one random low bit of one randomly chosen character")
+    fun flipRandomCharacter(input: String, random: Random): String{
+        // so I guess we have to convert string to bit
+        // then we have to flip a random bit and use XOR for that
+        // then we should convert bit to string again
+
+        val chars = input.toCharArray()
+
+        val charIndex = random.nextInt(chars.size)
+        val bitToFlip = 1 shl random.nextInt(8)
+
+        chars[charIndex] = (chars[charIndex].code xor bitToFlip).toChar()
+
+        return String(chars)
+
+    }
+        //"Exercise 1: flip one random low bit of one randomly chosen character")
 
     /** Repeats one randomly chosen character a random number of times in place. */
-    fun repeatRandomCharacter(input: String, random: Random): String =
-        TODO("Exercise 1: repeat one randomly chosen character a random number of times")
+    fun repeatRandomCharacter(input: String, random: Random): String {
+        //random chose of char
+        val len = input.count()
+        // have a random number in the range of len
+        val rnInt = random.nextInt(1, len)
+        // with deleteAt we can delete at specific index
+
+        //make StringBuilder object to access deleteAt(index) func
+        val newString = StringBuilder(input)
+        newString.deleteAt(rnInt)
+        return newString.toString()
+
+    }
+        //("Exercise 1: repeat one randomly chosen character a random number of times")
 }
