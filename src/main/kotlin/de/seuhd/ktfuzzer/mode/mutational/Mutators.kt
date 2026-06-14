@@ -16,11 +16,13 @@ import kotlin.text.Charsets
 internal object Mutators {
     /** Deletes one randomly chosen character. */
     fun deleteRandomCharacter(input: String, random: Random): String {
+        //after testing -> null input or empty string should be handled
+        if (input.isEmpty()) return ""
         //Exercise 1: delete one randomly chosen character
         //length of input chars
         val len = input.count()
         // have a random number in the range of len
-        val rnInt = random.nextInt(1, len)
+        val rnInt = random.nextInt(len)
         // with deleteAt we can delete at specific index
 
         //make StringBuilder object to access deleteAt(index) func
@@ -53,7 +55,7 @@ internal object Mutators {
         // so I guess we have to convert string to bit
         // then we have to flip a random bit and use XOR for that
         // then we should convert bit to string again
-
+        if (input.isEmpty()) return ""
         val chars = input.toCharArray()
 
         val charIndex = random.nextInt(chars.size)
@@ -68,19 +70,22 @@ internal object Mutators {
 
     /** Repeats one randomly chosen character a random number of times in place. */
     fun repeatRandomCharacter(input: String, random: Random): String {
+        if (input.isEmpty()) return ""
         //random chose of char
         val len = input.count()
         // have a random number in the range of len
         val rnInt = random.nextInt(len)
-        // with deleteAt we can delete at specific index
+        val ch = input[rnInt]
+
+        val repeats = random.nextInt(1, 11)
+
         val newString = StringBuilder(input)
-        for (i in 0..random.nextInt()){
-            newString.insert(rnInt, input[i])
+
+        repeat(repeats) {
+            newString.insert(rnInt, ch)
         }
-        //make StringBuilder object to access deleteAt(index) func
 
         return newString.toString()
-
     }
         //("Exercise 1: repeat one randomly chosen character a random number of times")
 }
