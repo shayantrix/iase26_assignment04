@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.report.ConsoleReporterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-13T16:22:17.700Z" hostname="SIMBA" time="0.003">
-  <properties/>
-  <testcase name="the console renderers print for a clean run and a crash run()" classname="de.seuhd.ktfuzzer.report.ConsoleReporterTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
