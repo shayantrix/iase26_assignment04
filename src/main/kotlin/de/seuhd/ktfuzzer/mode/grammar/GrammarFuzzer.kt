@@ -117,7 +117,44 @@ internal class GrammarFuzzer(
         state: ExpansionState,
         strategy: ExpansionStrategy,
         preferRecursive: Boolean
-    ): MutableList<DerivationNode> = TODO("Exercise 2: expand one pending derivation-tree node")
+    ): MutableList<DerivationNode> {
+        val children = when (val expression = node.expression) {
+            is Expression.Terminal -> mutableListOf()
+
+            is Expression.NonTerminal -> {
+                val newPath = node.path + expression.name
+                val symbolDepth = newPath.count { it == expression.name }
+                if (symbolDepth > state.recursiveDescents) state.recursiveDescents = symbolDepth
+                mutableListOf(DerivationNode(grammar.productions.getValue(expression.name), newPath, node.level + 1))
+            }
+
+            is Expression.Sequence ->
+                expression.parts.map { DerivationNode(it, node.path, node.level + 1) }.toMutableList()
+
+            is Expression.Choice -> {
+                val alternative = chooseAlternative(expression.alternatives, node.path, state, strategy)
+                mutableListOf(DerivationNode(alternative, node.path, node.level + 1))
+            }
+
+            is Expression.Repetition -> {
+                val count = repetitionCount(expression.body, node.path, state, strategy, preferRecursive)
+                MutableList(count) { DerivationNode(expression.body, node.path, node.level + 1) }
+            }
+
+            is Expression.Optional -> {
+                if (includeOptional(expression.body, node.path, state, strategy, preferRecursive)) {
+                    mutableListOf(DerivationNode(expression.body, node.path, node.level + 1))
+                } else {
+                    mutableListOf()
+                }
+            }
+
+            is Expression.Group ->
+                mutableListOf(DerivationNode(expression.body, node.path, node.level + 1))
+        }
+        resolveTerminals(children)
+        return children
+    }
 
     /** Marks terminal children as already closed, so they are never expanded again. */
     private fun resolveTerminals(nodes: MutableList<DerivationNode>) {
