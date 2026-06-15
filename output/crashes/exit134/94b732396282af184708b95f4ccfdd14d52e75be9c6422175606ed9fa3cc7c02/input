@@ -1,0 +1,3 @@
+greeting="helloworld"
+words=["a", "b",,,,,,,, "c"]
+marix=[["a", "b"], ["", "d"]]

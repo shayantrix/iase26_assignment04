@@ -1,0 +1,3 @@
+greeting="hello world"
+worrds=["a",,, "b", "c"]
+matrix=[["pa", "b"], ["c", "d"]]

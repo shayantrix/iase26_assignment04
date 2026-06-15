@@ -1,0 +1,1 @@
+{"mode":"mutational","seed":679462,"target":"toml_parser_linux_x86_64","stop":"max-executions","executions":10000,"elapsedMs":30234,"executionsPerSecond":330,"expected":{"accepted":976,"rejected":8808},"crashed":216,"uniqueCrashes":206,"crashWriteFailures":0,"timeouts":0,"errors":0,"crashDir":"output/crashes","crashExitCodes":{"SIGABRT":192,"SIGSEGV":14}}

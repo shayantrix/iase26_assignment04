@@ -1,0 +1,3 @@
+greetin="hello 8world"
+words=["a", "b",,$,,,, "c"]
+matrix=[["a", "b], ["c", "d"]]

@@ -1,0 +1,3 @@
+greeting="hello world"
+words=["a",,, "b", "c"]
+matrix=[["an", "b"], ["c", "d"]]

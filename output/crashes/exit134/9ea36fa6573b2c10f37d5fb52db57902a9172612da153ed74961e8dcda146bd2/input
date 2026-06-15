@@ -1,0 +1,3 @@
+greeting="hello world"
+ords=["a", "b", "c"]
+matrix=[["a",,,,,,"b"], ["a", "d"]]

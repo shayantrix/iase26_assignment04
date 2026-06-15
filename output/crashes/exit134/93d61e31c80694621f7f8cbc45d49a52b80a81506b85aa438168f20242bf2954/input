@@ -1,0 +1,3 @@
+6greeing="hello world"
+words=["a", "b",,,,,, "c"]
+matrix=[["a", "b"], ["ccccc", "d"]]
