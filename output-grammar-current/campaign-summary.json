@@ -1,0 +1,1 @@
+{"mode":"grammar","seed":679462,"target":"toml_parser_linux_x86_64","stop":"first-crash","executions":1,"elapsedMs":2767,"executionsPerSecond":0,"expected":{"accepted":0,"rejected":0},"crashed":1,"uniqueCrashes":1,"crashWriteFailures":0,"timeouts":0,"errors":0,"crashDir":"output-grammar-current/crashes","crashExitCodes":{"SIGABRT":1}}

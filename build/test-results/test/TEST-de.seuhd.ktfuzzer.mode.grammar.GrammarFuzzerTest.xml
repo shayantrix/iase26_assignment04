@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-06-15T00:39:09.018Z" hostname="SIMBA" time="4.201">
+<testsuite name="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-06-15T00:48:33.476Z" hostname="fedora.fritz.box" time="3.326">
   <properties/>
-  <testcase name="deep nesting is one linear chain, not a branching tree()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.25"/>
-  <testcase name="the same seed produces the same documents()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.031"/>
-  <testcase name="recursion-depth generation reaches the requested depth for any grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="3.539"/>
-  <testcase name="generated documents render grammar terminals only()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.268"/>
-  <testcase name="the recursion-depth counter matches the rendered nesting on a controlled grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.02"/>
-  <testcase name="broad recursive growth can use sibling recursive repetitions()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.022"/>
+  <testcase name="deep nesting is one linear chain, not a branching tree()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.195"/>
+  <testcase name="the same seed produces the same documents()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.013"/>
+  <testcase name="recursion-depth generation reaches the requested depth for any grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="2.879"/>
+  <testcase name="generated documents render grammar terminals only()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.21"/>
+  <testcase name="the recursion-depth counter matches the rendered nesting on a controlled grammar()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.011"/>
+  <testcase name="broad recursive growth can use sibling recursive repetitions()" classname="de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

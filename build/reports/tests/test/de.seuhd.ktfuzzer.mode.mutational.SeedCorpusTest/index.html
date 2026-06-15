@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest</title>
+<title>Test results - de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
@@ -12,7 +12,7 @@
 <div id="content">
 <div class="breadcrumbs">
 <a class="breadcrumb" href="../index.html">all</a> &gt; 
-<span class="breadcrumb">de.seuhd.ktfuzzer.mode.grammar.GrammarFuzzerTest</span>
+<span class="breadcrumb">de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest</span>
 </div>
 <div class="tab-container">
 <ul class="tabLinks">
@@ -22,7 +22,7 @@
 </ul>
 <div class="tab">
 <h2>Gradle Test Run :test</h2>
-<h1>GrammarFuzzerTest</h1>
+<h1>SeedCorpusTest</h1>
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
@@ -41,7 +41,7 @@
 <tr>
 <td>
 <div class="infoBox">
-<div class="counter">6</div>
+<div class="counter">3</div>
 <p>tests</p>
 </div>
 </td>
@@ -59,7 +59,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">3.326s</div>
+<div class="counter">0.008s</div>
 <p>duration</p>
 </div>
 </td>
@@ -89,57 +89,30 @@
 </tr>
 </thead>
 <tr>
-<td class="success">broad recursive growth can use sibling recursive repetitions()</td>
-<td class="path" hidden="">broad recursive growth can use sibling recursive repetitions()</td>
+<td class="success">load reads the toml seeds in name order, skipping invalid and non-toml files(Path)</td>
+<td class="path" hidden="">load reads the toml seeds in name order, skipping invalid and non-toml files(Path)</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.014s</td>
+<td>0.005s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">deep nesting is one linear chain, not a branching tree()</td>
-<td class="path" hidden="">deep nesting is one linear chain, not a branching tree()</td>
+<td class="success">load returns nothing when the directory is absent(Path)</td>
+<td class="path" hidden="">load returns nothing when the directory is absent(Path)</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.195s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">generated documents render grammar terminals only()</td>
-<td class="path" hidden="">generated documents render grammar terminals only()</td>
+<td class="success">loadFile reads one seed file as a single-element list(Path)</td>
+<td class="path" hidden="">loadFile reads one seed file as a single-element list(Path)</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.210s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">recursion-depth generation reaches the requested depth for any grammar()</td>
-<td class="path" hidden="">recursion-depth generation reaches the requested depth for any grammar()</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>2.879s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">the recursion-depth counter matches the rendered nesting on a controlled grammar()</td>
-<td class="path" hidden="">the recursion-depth counter matches the rendered nesting on a controlled grammar()</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.011s</td>
-<td class="success">100%</td>
-</tr>
-<tr>
-<td class="success">the same seed produces the same documents()</td>
-<td class="path" hidden="">the same seed produces the same documents()</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0.013s</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 </table>

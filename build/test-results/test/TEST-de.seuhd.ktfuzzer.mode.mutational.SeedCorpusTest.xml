@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-06-15T00:48:36.905Z" hostname="fedora.fritz.box" time="0.008">
+  <properties/>
+  <testcase name="load returns nothing when the directory is absent(Path)" classname="de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest" time="0.001"/>
+  <testcase name="loadFile reads one seed file as a single-element list(Path)" classname="de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest" time="0.001"/>
+  <testcase name="load reads the toml seeds in name order, skipping invalid and non-toml files(Path)" classname="de.seuhd.ktfuzzer.mode.mutational.SeedCorpusTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

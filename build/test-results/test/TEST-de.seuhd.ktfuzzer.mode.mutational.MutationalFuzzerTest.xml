@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-06-15T00:48:36.803Z" hostname="fedora.fritz.box" time="0.004">
+  <properties/>
+  <testcase name="the mutation count bounds must be positive and ordered()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001"/>
+  <testcase name="an empty population is rejected()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.0"/>
+  <testcase name="fuzz returns each seed once, in order, before any candidate()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.0"/>
+  <testcase name="mutate is reproducible from the same Random()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.0"/>
+  <testcase name="createCandidate mutates a seed and is reproducible()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.0"/>
+  <testcase name="fuzz produces mutated candidates once the population is exhausted()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.001"/>
+  <testcase name="mutate changes a non-empty seed()" classname="de.seuhd.ktfuzzer.mode.mutational.MutationalFuzzerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.seuhd.ktfuzzer.engine.HarnessTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-06-15T00:48:33.383Z" hostname="fedora.fritz.box" time="0.013">
+  <properties/>
+  <testcase name="crash write failures are counted and do not stop the campaign()" classname="de.seuhd.ktfuzzer.engine.HarnessTest" time="0.001"/>
+  <testcase name="the same seed produces an identical run()" classname="de.seuhd.ktfuzzer.engine.HarnessTest" time="0.007"/>
+  <testcase name="crashes are deduplicated and written once per unique input(Path)" classname="de.seuhd.ktfuzzer.engine.HarnessTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
